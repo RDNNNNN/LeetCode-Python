@@ -3,6 +3,8 @@
 # 給定一個字串 s，字串的分數定義為相鄰字元的 ASCII 值之間的絕對差之和。
 # Return the score of s.
 # 回傳 s 的分數
+
+
 # Example 1:
 # Input: s = "hello"
 
@@ -11,7 +13,6 @@
 # The ASCII values of the characters in s are: 'h' = 104, 'e' = 101, 'l' = 108, 'o' = 111. So, the score of s would be |104 - 101| + |101 - 108| + |108 - 108| + |108 - 111| = 3 + 7 + 0 + 3 = 13.
 # Example 2:
 # Input: s = "zaz"
-
 
 # Output: 50
 # Explanation (解釋):
