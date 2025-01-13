@@ -1,12 +1,12 @@
 ## 3110. Score of a String
 
-#### You are given a string s. The score of a string is defined as the sum of the absolute difference between the ASCII values of adjacent characters.
+### You are given a string s. The score of a string is defined as the sum of the absolute difference between the ASCII values of adjacent characters.
 
-#### Return the score of s.
+### 給定一個字串 s，字串的分數定義為相鄰字元的 ASCII 值之間的絕對差之和。
 
-#### 給定一個字串 s，字串的分數定義為相鄰字元的 ASCII 值之間的絕對差之和。
+### Return the score of s.
 
-#### 回傳 s 的分數
+### 回傳 s 的分數
 
 ---
 
@@ -129,4 +129,3 @@ class Solution:
 # np.aps() 取絕對值
 # np.sum() 計算總和
 ```
-# LeetCode-Python
