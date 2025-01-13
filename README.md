@@ -35,16 +35,17 @@ Output: 50
 ### Explanation (解釋):
 
 ```py
-The ASCII values of the characters in s are: 'z' = 122, 'a' = 97. So, the score of s would be |122 - 97| + |97 - 122| = 25 + 25 = 50.
+The ASCII values of the characters in s are: 'z' = 122, 'a' = 97.
+So, the score of s would be |122 - 97| + |97 - 122| = 25 + 25 = 50.
 ```
 
 ### Constraints (限制):
 
-#### `2 <= s.length <= 100`
+### `2 <= s.length <= 100`
 
-#### `s` consists only of lowercase English letters.
+### `s` consists only of lowercase English letters.
 
-#### `s` 僅由小寫字母組成
+### `s` 僅由小寫字母組成
 
 ```py
 class Solution:
