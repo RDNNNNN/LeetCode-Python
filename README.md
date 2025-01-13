@@ -21,7 +21,8 @@ Output: 13
 ### Explanation (解釋):
 
 ```py
-The ASCII values of the characters in s are: 'h' = 104, 'e' = 101, 'l' = 108, 'o' = 111. So, the score of s would be |104 - 101| + |101 - 108| + |108 - 108| + |108 - 111| = 3 + 7 + 0 + 3 = 13.
+The ASCII values of the characters in s are: 'h' = 104, 'e' = 101, 'l' = 108, 'o' = 111.
+So, the score of s would be |104 - 101| + |101 - 108| + |108 - 108| + |108 - 111| = 3 + 7 + 0 + 3 = 13.
 ```
 
 ### Example 2:
@@ -73,8 +74,10 @@ class Solution:
     def scoreOfString(self, s: str) -> int:
         return sum(abs(ord(s[i]) - ord(s[i + 1])) for i in range(len(s) - 1))
 
+
 # sum() 將生成式的每個元素累加
 # 生成式使用 for 迴圈生成每個相鄰字元的 ASCII 絕對差
+
 
 # zip()
 class Solution:
@@ -84,6 +87,7 @@ class Solution:
 # zip() 將兩個序列按照索引配對
 # s 為原字串，s[1:] 為去掉第一個字元的字串
 # 生成式將配對的相鄰字元計算 ASCII 絕對差並累加
+
 
 # itertools.pairwise (Python 3.10)
 from itertools import pairwise
@@ -95,6 +99,7 @@ class Solution:
 # pairwisw() 將序列中的相鄰元素自動配對
 # 只支援 Python 3.10 以上的版本
 
+
 # map()
 class Solution:
     def scoreOfString(self, s: str) -> int:
@@ -103,6 +108,7 @@ class Solution:
 
 # map() 將每個配對的相鄰字元應用 lambda 函式
 # zip() 將字串的每個相鄰字元配對
+
 
 # 遞迴
 class Solution:
@@ -113,6 +119,7 @@ class Solution:
 
 # 遞迴呼叫自身來處理剩餘的字串
 # 每次遞迴計算第一個相鄰字元的 ASCII 絕對差，對剩餘的字串重複過程。
+
 
 # Numpy
 import numpy as np
