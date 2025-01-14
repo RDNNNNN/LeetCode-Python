@@ -1,4 +1,4 @@
-## 3110. Score of a String (字串分數)
+## 3110. Score of a String 字串分數
 
 ### You are given a string s. The score of a string is defined as the sum of the absolute difference between the ASCII values of adjacent characters.
 
@@ -18,7 +18,7 @@ Input: s = "hello"
 Output: 13
 ```
 
-### Explanation (解釋):
+### Explanation 解釋:
 
 ```py
 The ASCII values of the characters in s are: 'h' = 104, 'e' = 101, 'l' = 108, 'o' = 111.
@@ -33,14 +33,14 @@ Input: s = "zaz"
 Output: 50
 ```
 
-### Explanation (解釋):
+### Explanation 解釋:
 
 ```py
 The ASCII values of the characters in s are: 'z' = 122, 'a' = 97.
 So, the score of s would be |122 - 97| + |97 - 122| = 25 + 25 = 50.
 ```
 
-### Constraints (限制):
+### Constraints 限制:
 
 ### `2 <= s.length <= 100`
 
