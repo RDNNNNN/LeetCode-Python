@@ -1,8 +1,9 @@
 ## 3110. Score of a String 字串分數
 
-You are given a string s. The score of a string is defined as the sum of the absolute difference between the ASCII values of adjacent characters.
+You are given a string `s`. 
+The score of a string is defined as the sum of the absolute difference between the ASCII values of adjacent characters.
 
-給定一個字串 s，字串的分數定義為相鄰字元的 ASCII 值之間的絕對差之和。
+給定一個字串 `s`，字串的分數定義為相鄰字元的 ASCII 值之間的絕對差之和。
 
 Return the score of s.
 
