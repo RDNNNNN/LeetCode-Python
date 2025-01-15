@@ -6,7 +6,7 @@ The score of a string is defined as the sum of the absolute difference between t
 
 給定一個字串 `s`，字串的分數定義為相鄰字元的 ASCII 值之間的絕對差之和。
 
-Return the score of s.
+Return the score of `s`.
 
 回傳 `s` 的分數
 
