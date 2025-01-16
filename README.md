@@ -10,7 +10,9 @@ Return the score of `s`.
 
 回傳 `s` 的分數
 
-## 範例
+---
+
+### 範例
 
 ### Example 1:
 
@@ -55,7 +57,9 @@ class Solution:
     def scoreOfString(self, s: str) -> int:
 ```
 
-## Code
+---
+
+### Code
 
 ```py
 class Solution:
