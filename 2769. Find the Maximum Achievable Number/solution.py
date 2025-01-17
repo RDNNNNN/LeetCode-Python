@@ -4,7 +4,7 @@
 # 給兩個整數 `num` 跟 `t`，如果數字 `x` 能在最多 `t` 次運算後為 `num`，則該數字是可實現的。
 # Increase or decrease `x` by `1`, and simultaneously increase or decrease `num` by `1`.
 # Return the maximum possible value of `x`.
-# 將 `x` 增加或減少 1 ，同時將 `num` 增加或減少 1，回傳 `x` 可能的最大值
+# 將 `x` 增加或減少 1 ，同時將 `num` 增加或減少 `1`，回傳 `x` 可能的最大值
 
 ### 懶人包
 # 1. 每次操作可以增加或是減少 `x` 和 `num` 各 `1`
