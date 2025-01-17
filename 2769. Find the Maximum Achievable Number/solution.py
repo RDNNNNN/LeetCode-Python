@@ -33,8 +33,8 @@
 
 # Apply the following operation twice to make the maximum achievable number equal to `num`:
 # 使用以下操作兩次，使最大的可實現數字為 `num`
-# Decrease the maximum achievable number by 1, and increase `num` by 1.
-# 將最大的可實現數量減少 1，並將數量增加 1
+# Decrease the maximum achievable number by `1`, and increase `num` by `1``.
+# 將最大的可實現數量減少 `1`，並將數量增加 `1`
 
 ### Constraints (限制):
 
