@@ -162,7 +162,7 @@ Input: num = 4, t = 1
 Output: 6
 ```
 
-### Explanation (解釋):
+### Explanation 解釋:
 
 Apply the following operation once to make the maximum achievable number equal to `num`:
 
@@ -180,7 +180,7 @@ Input: num = 3, t = 2
 Output: 7
 ```
 
-### Explanation (解釋):
+### Explanation 解釋:
 
 Apply the following operation twice to make the maximum achievable number equal to `num`:
 
@@ -190,7 +190,7 @@ Decrease the maximum achievable number by `1`, and increase `num` by `1`.
 
 將最大的可實現數量減少 `1`，並將數量增加 `1`
 
-### Constraints (限制):
+### Constraints 限制:
 
 `1 <= num, t <= 50`
 
