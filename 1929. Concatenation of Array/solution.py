@@ -1,4 +1,4 @@
-## 1929. Concatenation of Array 5
+## 1929. Concatenation of Array 陣列連接
 
 # Given an integer array `nums` of length `n`, you want to create an array `ans` of length `2n` where `ans[i] == nums[i]` and `ans[i + n] == nums[i]` for `0 <= i < n` (0-indexed).
 # 給定一個長度為 `n` 的整數陣列，你要建立一個長度為 `2n` 的陣列 `ans`，其中`ans[i] == nums[i]` 和 `ans[i + n] == nums[i]`，表示 `0 <= i < n` (從 0 開始索引)
