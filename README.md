@@ -48,7 +48,7 @@ The array ans is formed as follows:
 
 `Output: [1,3,2,1,1,3,2,1]`
 
-Explanation 解釋:
+### Explanation 解釋:
 
 The array ans is formed as follows:
 
