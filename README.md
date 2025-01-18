@@ -1,4 +1,4 @@
-## 1929. Concatenation of Array
+## 1929. Concatenation of Array 陣列連接
 
 Given an integer array `nums` of length `n`, you want to create an array `ans` of length `2n` where `ans[i] == nums[i]` and `ans[i + n] == nums[i]` for `0 <= i < n` (0-indexed).
 
@@ -21,6 +21,8 @@ Return the array `ans`.
 `ans` 的前 `n` 的元素等於 `nums` 的所有元素，後 `n` 個元素也等於 `nums`
 
 最後回傳 `ans` 陣列
+
+---
 
 ### 案例
 
@@ -61,6 +63,8 @@ The array ans is formed as follows:
 `n == nums.length`
 `1 <= n <= 1000`
 `1 <= nums[i] <= 1000`
+
+---
 
 ### Code
 
