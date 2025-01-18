@@ -321,15 +321,12 @@ So, the score of s would be |122 - 97| + |97 - 122| = 25 + 25 = 50.
 
 ### Constraints 限制:
 
-`2 <= s.length <= 100`
-
-`s` consists only of lowercase English letters.
-
-`s` 僅由小寫字母組成
-
 ```py
-class Solution:
-    def scoreOfString(self, s: str) -> int:
+2 <= s.length <= 100
+
+s consists only of lowercase English letters.
+
+s 僅由小寫字母組成
 ```
 
 ---
