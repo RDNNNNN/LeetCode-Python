@@ -204,7 +204,9 @@ Decrease the maximum achievable number by `1`, and increase `num` by `1`.
 
 ### Constraints 限制:
 
-`1 <= num, t <= 50`
+```py
+1 <= num, t <= 50
+```
 
 ---
 
