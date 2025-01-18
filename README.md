@@ -24,7 +24,7 @@ Return the array `ans`.
 
 ---
 
-### 案例
+### 範例
 
 ### Example 1:
 
@@ -151,6 +151,8 @@ Return the maximum possible value of `x`.
 2. 每次操作讓 `x` 和 `num` 差異減少 `2`
 
 ---
+
+### 範例
 
 ### Example 1:
 
