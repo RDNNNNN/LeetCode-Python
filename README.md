@@ -32,7 +32,7 @@ Return the array `ans`.
 
 `Output: [1,2,1,1,2,1]`
 
-Explanation 解釋:
+### Explanation 解釋:
 
 The array ans is formed as follows:
 
