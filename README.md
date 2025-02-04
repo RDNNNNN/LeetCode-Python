@@ -24,9 +24,7 @@ Return the array `ans`.
 
 ---
 
-### 範例
-
-### Example 1:
+### Example 1 範例:
 
 ```py
 Input: nums = [1,2,1]
@@ -46,7 +44,7 @@ The array ans is formed as follows:
 - ans = [1,2,1,1,2,1]
 ```
 
-### Example 2:
+### Example 2 範例:
 
 ```py
 Input: nums = [1,3,2,1]
@@ -164,9 +162,7 @@ Return the maximum possible value of `x`.
 
 ---
 
-### 範例
-
-### Example 1:
+### Example 1 範例:
 
 ```py
 Input: num = 4, t = 1
@@ -184,7 +180,7 @@ Decrease the maximum achievable number by `1`, and increase num by `1`.
 
 將最大的可實現數量減少 `1`，並將數量增加 `1`
 
-### Example 2:
+### Example 2 範例:
 
 ```py
 Input: num = 3, t = 2
@@ -289,9 +285,7 @@ Return the score of `s`.
 
 ---
 
-### 範例
-
-### Example 1:
+### Example 1 範例:
 
 ```py
 Input: s = "hello"
@@ -306,7 +300,7 @@ The ASCII values of the characters in s are: 'h' = 104, 'e' = 101, 'l' = 108, 'o
 So, the score of s would be |104 - 101| + |101 - 108| + |108 - 108| + |108 - 111| = 3 + 7 + 0 + 3 = 13.
 ```
 
-### Example 2:
+### Example 2 範例:
 
 ```py
 Input: s = "zaz"
