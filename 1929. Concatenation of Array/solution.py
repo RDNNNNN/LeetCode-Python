@@ -1,19 +1,19 @@
 ## 1929. Concatenation of Array 陣列連接
 
-# Given an integer array `nums` of length `n`, you want to create an array `ans` of length `2n` where `ans[i] == nums[i]` and `ans[i + n] == nums[i]` for `0 <= i < n` (0-indexed).
-# 給定一個長度為 `n` 的整數陣列，你要建立一個長度為 `2n` 的陣列 `ans`，其中`ans[i] == nums[i]` 和 `ans[i + n] == nums[i]`，表示 `0 <= i < n` (從 0 開始索引)
+# Given an integer array `nums` of length n, you want to create an array ans of length 2n where ans[i] == nums[i] and ans[i + n] == nums[i] for 0 <= i < n (0-indexed).
+# 給定一個長度為 n 的整數陣列，你要建立一個長度為 2n 的陣列 ans，其中 ans[i] == nums[i] 和 ans[i + n] == nums[i]，表示 0 <= i < n (從 0 開始索引)
 
-# Specifically, `ans` is the concatenation of two `nums` arrays.
-# 具體來說，`ans` 是兩個陣列的連接。
-# Return the array `ans`.
-# 回傳陣列 `ans`
+# Specifically, ans is the concatenation of two nums arrays.
+# 具體來說，ans 是兩個陣列的連接。
+# Return the array ans.
+# 回傳陣列 ans
 
 ### 懶人包
 
-# 給定一個整數陣列 `nums`，長度為 `n`
-# 建立一個陣列 `ans`，長度為 `2n`
-# `ans` 的前 `n` 的元素等於 `nums` 的所有元素，後 `n` 個元素也等於 `nums`
-# 最後回傳 `ans` 陣列
+# 給定一個整數陣列 nums，長度為 n
+# 建立一個陣列 ans，長度為 2n
+# ans 的前 n 的元素等於 nums 的所有元素，後 n 個元素也等於 nums
+# 最後回傳 ans 陣列
 
 ### Example 1 範例:
 
