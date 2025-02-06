@@ -6,7 +6,7 @@ Given an integer array `nums` of length `n`, you want to create an array `ans` o
 
 Specifically, `ans` is the concatenation of two `nums` arrays.
 
-具體來說，`ans` 是兩個陣列的連接。
+具體來說，`ans` 是兩個陣列的連接
 
 Return the array `ans`.
 
@@ -147,7 +147,7 @@ class Solution:
 
 Given two integers, num and t. A number x is achievable if it can become equal to num after applying the following operation at most t times:
 
-給兩個整數 `num` 跟 `t`，如果數字 `x` 能在最多 `t` 次運算後為 `num`，則該數字是可實現的。
+給兩個整數 `num` 跟 `t`，如果數字 `x` 能在最多 `t` 次運算後為 `num`，則該數字是可實現的
 
 Increase or decrease `x` by `1`, and simultaneously increase or decrease `num` by `1`.
 
@@ -277,7 +277,7 @@ You are given a string `s`.
 
 The score of a string is defined as the sum of the absolute difference between the ASCII values of adjacent characters.
 
-給定一個字串 `s`，字串的分數定義為相鄰字元的 ASCII 值之間的絕對差之和。
+給定一個字串 `s`，字串的分數定義為相鄰字元的 ASCII 值之間的絕對差之和
 
 Return the score of `s`.
 
