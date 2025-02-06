@@ -1,7 +1,7 @@
 ## 2769. Find the Maximum Achievable Number
 
 # Given two integers, num and t. A number x is achievable if it can become equal to num after applying the following operation at most t times:
-# 給兩個整數 `num` 跟 `t`，如果數字 `x` 能在最多 `t` 次運算後為 `num`，則該數字是可實現的。
+# 給兩個整數 `num` 跟 `t`，如果數字 `x` 能在最多 `t` 次運算後為 `num`，則該數字是可實現的
 # Increase or decrease `x` by `1`, and simultaneously increase or decrease `num` by `1`.
 # Return the maximum possible value of `x`.
 # 將 `x` 增加或減少 1 ，同時將 `num` 增加或減少 `1`，回傳 `x` 可能的最大值
@@ -11,9 +11,7 @@
 # 1. 每次操作可以增加或是減少 `x` 和 `num` 各 `1`
 # 2. 每次操作讓 `x` 和 `num` 差異減少 `2`
 
-### 範例
-
-### Example 1:
+### Example 1 範例:
 
 # Input: num = 4, t = 1
 
@@ -26,7 +24,7 @@
 # Decrease the maximum achievable number by `1`, and increase num by `1`.
 # 將最大的可實現數量減少 `1`，並將數量增加 `1`
 
-### Example 2:
+### Example 2 範例:
 
 # Input: num = 3, t = 2
 
