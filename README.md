@@ -143,7 +143,7 @@ class Solution:
 # 直觀但需要額外的記憶體，因為創建了新的 list
 ```
 
-## 2769. Find the Maximum Achievable Number
+## 2769. Find the Maximum Achievable Number 找到可實現的最大數字
 
 Given two integers, num and t. A number x is achievable if it can become equal to num after applying the following operation at most t times:
 
