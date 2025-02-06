@@ -1,15 +1,15 @@
 ## 2769. Find the Maximum Achievable Number 找到可實現的最大數字
 
 # Given two integers, num and t. A number x is achievable if it can become equal to num after applying the following operation at most t times:
-# 給兩個整數 `num` 跟 `t`，如果數字 `x` 能在最多 `t` 次運算後為 `num`，則該數字是可實現的
-# Increase or decrease `x` by `1`, and simultaneously increase or decrease `num` by `1`.
-# Return the maximum possible value of `x`.
-# 將 `x` 增加或減少 1 ，同時將 `num` 增加或減少 `1`，回傳 `x` 可能的最大值
+# 給兩個整數 num 跟 t，如果數字 x 能在最多 t 次運算後為 num，則該數字是可實現的
+# Increase or decrease x by 1, and simultaneously increase or decrease num by 1.
+# Return the maximum possible value of x.
+# 將 x 增加或減少 1 ，同時將 num 增加或減少 1，回傳 x 可能的最大值
 
 ### 懶人包
 
-# 1. 每次操作可以增加或是減少 `x` 和 `num` 各 `1`
-# 2. 每次操作讓 `x` 和 `num` 差異減少 `2`
+# 1. 每次操作可以增加或是減少 x 和 num 各 1
+# 2. 每次操作讓 x 和 num 差異減少 2
 
 ### Example 1 範例:
 
@@ -19,10 +19,10 @@
 
 ### Explanation 解釋:
 
-# Apply the following operation once to make the maximum achievable number equal to `num`:
-# 使用以下操作一次，使最大的可實現數字為 `num`
-# Decrease the maximum achievable number by `1`, and increase num by `1`.
-# 將最大的可實現數量減少 `1`，並將數量增加 `1`
+# Apply the following operation once to make the maximum achievable number equal to num:
+# 使用以下操作一次，使最大的可實現數字為 num
+# Decrease the maximum achievable number by 1, and increase num by 1.
+# 將最大的可實現數量減少 1，並將數量增加 1
 
 ### Example 2 範例:
 
@@ -32,14 +32,14 @@
 
 ### Explanation 解釋:
 
-# Apply the following operation twice to make the maximum achievable number equal to `num`:
-# 使用以下操作兩次，使最大的可實現數字為 `num`
-# Decrease the maximum achievable number by `1`, and increase `num` by `1``.
-# 將最大的可實現數量減少 `1`，並將數量增加 `1`
+# Apply the following operation twice to make the maximum achievable number equal to num:
+# 使用以下操作兩次，使最大的可實現數字為 num
+# Decrease the maximum achievable number by 1, and increase num by 1.
+# 將最大的可實現數量減少 1，並將數量增加 1
 
 ### Constraints 限制:
 
-# `1 <= num, t <= 50`
+# 1 <= num, t <= 50
 
 ### Code
 
