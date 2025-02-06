@@ -15,9 +15,7 @@
 # `ans` 的前 `n` 的元素等於 `nums` 的所有元素，後 `n` 個元素也等於 `nums`
 # 最後回傳 `ans` 陣列
 
-### 案例
-
-### Example 1:
+### Example 1 範例:
 
 # Input: nums = [1,2,1]
 
@@ -33,7 +31,7 @@
 
 # - ans = [1,2,1,1,2,1]
 
-# Example 2:
+# Example 2 範例:
 
 
 # Input: nums = [1,3,2,1]
