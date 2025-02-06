@@ -17,9 +17,9 @@
 
 ### Example 1 範例:
 
-# Input: nums = [1,2,1]
+# Input: nums = [1, 2, 1]
 
-# Output: [1,2,1,1,2,1]
+# Output: [1, 2, 1, 1, 2, 1]
 
 # Explanation 解釋: 
 
@@ -27,16 +27,16 @@
 
 # 陣列的結構如下
 
-# - ans = [nums[0],nums[1],nums[2],nums[0],nums[1],nums[2]]
+# - ans = [nums[0], nums[1], nums[2], nums[0], nums[1], nums[2]]
 
-# - ans = [1,2,1,1,2,1]
+# - ans = [1, 2, 1, 1, 2, 1]
 
 # Example 2 範例:
 
 
-# Input: nums = [1,3,2,1]
+# Input: nums = [1, 3, 2, 1]
 
-# Output: [1,3,2,1,1,3,2,1]
+# Output: [1, 3, 2, 1, 1, 3, 2, 1]
 
 ### Explanation 解釋: 
 
@@ -44,9 +44,9 @@
 
 # 陣列的結構如下
 
-# - ans = [nums[0],nums[1],nums[2],nums[3],nums[0],nums[1],nums[2],nums[3]]
+# - ans = [nums[0], nums[1], nums[2], nums[3], nums[0], nums[1], nums[2], nums[3]]
 
-# - ans = [1,3,2,1,1,3,2,1]
+# - ans = [1, 3, 2, 1, 1, 3, 2, 1]
 
 
 ### Constraints 限制:
