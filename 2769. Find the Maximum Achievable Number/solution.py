@@ -1,4 +1,4 @@
-## 2769. Find the Maximum Achievable Number
+## 2769. Find the Maximum Achievable Number 找到可實現的最大數字
 
 # Given two integers, num and t. A number x is achievable if it can become equal to num after applying the following operation at most t times:
 # 給兩個整數 `num` 跟 `t`，如果數字 `x` 能在最多 `t` 次運算後為 `num`，則該數字是可實現的
