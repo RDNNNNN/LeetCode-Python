@@ -44,9 +44,9 @@ The elements in `nums` are distinct.
 
 `nums` 中的元素是不同的
 
-### Follow-up: Can you solve it without using an extra space (i.e., O(1) memory)?
+### Follow-up 額外要求: 
 
-### 額外要求: 
+Can you solve it without using an extra space (i.e., O(1) memory)? 
 
 你能在不使用額外空間（即O(1)記憶體）的情況下解決這個問題嗎？
 
