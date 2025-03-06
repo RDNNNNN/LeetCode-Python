@@ -56,6 +56,8 @@ Can you solve it without using an extra space (i.e., O(1) memory)?
 
 只使用固定大小的變數，那麼就是說只有 `O(1)` 的複雜度
 
+O 為 Order 的意思
+
 ---
 
 ### Code
