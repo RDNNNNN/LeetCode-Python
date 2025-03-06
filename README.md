@@ -1,8 +1,12 @@
 ## 1920. Build Array from Permutation 根據排列建立陣列
 
-Given a zero-based permutation nums (0-indexed), build an array ans of the same length where ans[i] = nums[nums[i]] for each 0 <= i < nums.length and return it.
+Given a zero-based permutation `nums` (0-indexed), build an array `ans` of the same length where `ans[i] = nums[nums[i]]` for each `0 <= i < nums.length` and `return` it.
 
-A zero-based permutation nums is an array of distinct integers from 0 to nums.length - 1 (inclusive).
+給定一個從 `0` 開始的排列 `nums` (從 `0` 開始索引)，建立一個相同長度的陣列 `ans`，每個 `0 <= i < nums.length`，`ans[i] = nums[nums[i]]` 並返回它
+
+A zero-based permutation `nums` is an array of distinct integers from `0` to `nums.length - 1 (inclusive)`.
+
+從 `0` 開始的排列 `nums` 是從 `0` 到 `nums.length -1` 的不同整數陣列
 
 ---
 
@@ -52,6 +56,26 @@ The elements in `nums` are distinct.
 class Solution:
     def buildArray(self, nums: List[int]) -> List[int]:
         return [nums[nums[i]] for i in range(len(nums))]
+    
+# 使用額外空間，即 O(n)
+# 取 nums[i] 作為索引，再去 nums[nums=[i]] 取得值並存入新陣列中
+
+
+class Solution:
+    def buildArray(self, nums: List[int]) -> List[int]:
+        n = len(nums)
+        
+        for i in range(n):
+            # nums[nums[i]] % n 可以取出原始的 nums[nums[i]] 值
+            nums[i] += (nums[nums[i]] % n) * n
+        
+        # 將新值提取出來
+        for i in range(n):
+            nums[i] //= n
+        
+        return nums
+    
+# 不使用額外空間，即 O(1)
 ```
 
 ## 1929. Concatenation of Array 陣列連接
