@@ -284,9 +284,7 @@ Output: 1
 
 ### Explanation 解釋: 
 
-The operations are performed as follows:
-
-操作如下
+The operations are performed as follows 操作如下:
 
 Initially, `X = 0`.
 
@@ -314,9 +312,7 @@ Output: 3
 
 ### Explanation 解釋: 
 
-The operations are performed as follows:
-
-操作如下
+The operations are performed as follows 操作如下:
 
 Initially, `X = 0`.
 
@@ -343,9 +339,7 @@ Output: 0
 
 ### Explanation 解釋: 
 
-The operations are performed as follows:
-
-操作如下
+The operations are performed as follows 操作如下:
 
 Initially, `X = 0`.
 
@@ -640,39 +634,41 @@ Output: 19
 
 In the given example 在給定的範例中:
 
-- Integers in the range `[1, 10]` that are not divisible by `3` are `[1,2,4,5,7,8,10]`, `num1` is the sum of those integers = `37`.
+Integers in the range `[1, 10]` that are not divisible by `3` are `[1,2,4,5,7,8,10]`, `num1` is the sum of those integers = `37`.
 
-- `[1, 10]`範圍內不能被 `3` 整除的整數是 `[1, 2, 4, 5, 7, 8, 10]`，`num1` 是這些整數的總和 `37`
+`[1, 10]`範圍內不能被 `3` 整除的整數是 `[1, 2, 4, 5, 7, 8, 10]`，`num1` 是這些整數的總和 `37`
 
-- Integers in the range `[1, 10]` that are divisible by 3 are `[3,6,9]`, num2 is the sum of those integers = `18`.
+Integers in the range `[1, 10]` that are divisible by 3 are `[3,6,9]`, num2 is the sum of those integers = `18`.
 
-- [1, 10]範圍內可以被 `3` 整除的整數是 `[3, 6, 9]`，`num2` 是這些整數的總和 `18`
+`[1, 10]` 範圍內可以被 `3` 整除的整數是 `[3, 6, 9]` ， `num2` 是這些整數的總和 `18`
 
-- We return `37 - 18 = 19` as the answer.
+We return `37 - 18 = 19` as the answer.
 
-- 我們返回 `37 - 18 = 19` 作為答案
+我們返回 `37 - 18 = 19` 作為答案
 
 ### Example 2 範例:
 
-`Input: n = 5, m = 6`
-`Output: 15`
+```py
+Input: n = 5, m = 6
+
+Output: 15
+```
 
 ### Explanation 解釋: 
 
 In the given example 在給定的範例中:
 
-- Integers in the range [1, 5] that are not divisible by 6 are [1,2,3,4,5], `num1` is the sum of those integers = `15`.
+Integers in the range [1, 5] that are not divisible by 6 are [1,2,3,4,5], `num1` is the sum of those integers = `15`.
 
-- `[1, 5]` 範圍內不能被 `6` 整除的數字是 `[1, 2, 3, 4, 5]，`num1` 是這些數字的總和 `15`
+`[1, 5]` 範圍內不能被 `6` 整除的數字是 `[1, 2, 3, 4, 5]，`num1` 是這些數字的總和 `15`
 
-- Integers in the range [1, 5] that are divisible by 6 are [], num2 is the sum of those integers = 0.
+Integers in the range [1, 5] that are divisible by 6 are [], num2 is the sum of those integers = 0.
 
+`[1, 5] 範圍內可以被 `6` 整除的整數是 `[]`，`num2` 是這些整數的總和 `0`
 
-- `[1, 5] 範圍內可以被 `6` 整除的整數是 `[]`，`num2` 是這些整數的總和 `0`
+We return `15 - 0 = 15` as the answer.
 
-- We return `15 - 0 = 15` as the answer.
-
-- 我們返回 `15 - 0 = 15` 作為答案
+我們返回 `15 - 0 = 15` 作為答案
 
 ### Example 3 範例:
 
@@ -686,21 +682,23 @@ Output: -15
 
 In the given example 在給定的範例中:
 
-- Integers in the range `[1, 5]` that are not divisible by `1` are `[]`, `num1` is the sum of those integers = `0`.
+Integers in the range `[1, 5]` that are not divisible by `1` are `[]`, `num1` is the sum of those integers = `0`.
 
-    - 在 `[1, 5]` 範圍內不能被 `1` 整除的數字是 `[]`，`num1` 是這些數字的總和
+在 `[1, 5]` 範圍內不能被 `1` 整除的數字是 `[]`，`num1` 是這些數字的總和
 
-- Integers in the range [1, 5] that are divisible by 1 are [1,2,3,4,5], `num2` is the sum of those integers = `15`.
+Integers in the range [1, 5] that are divisible by 1 are [1,2,3,4,5], `num2` is the sum of those integers = `15`.
 
-    - 在 `[1, 5] 範圍能被 `1` 整除的整數是 `[1, 2, 3, 4, 5]`， `num2` 是這些整數的總和
+在 `[1, 5] 範圍能被 `1` 整除的整數是 `[1, 2, 3, 4, 5]`， `num2` 是這些整數的總和
 
-- We return `0 - 15 = -15` as the answer.
+We return `0 - 15 = -15` as the answer.
 
-    - 我們返回 `0 - 15 = -15` 作為答案
+我們返回 `0 - 15 = -15` 作為答案
  
 ### Constraints 限制:
 
-`1 <= n, m <= 1000`
+```py
+1 <= n, m <= 1000
+```
 
 ---
 
@@ -769,11 +767,11 @@ So, the score of s would be |122 - 97| + |97 - 122| = 25 + 25 = 50.
 
 ```py
 2 <= s.length <= 100
-
-s consists only of lowercase English letters.
-
-s 僅由小寫字母組成
 ```
+
+`s` consists only of lowercase English letters.
+
+`s` 僅由小寫字母組成
 
 ---
 
