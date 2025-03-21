@@ -263,38 +263,96 @@ Given an array of strings `operations` containing a list of operations, return t
 
 ```py 
 Input: operations = ["--X","X++","X++"]
+
 Output: 1
-Explanation: The operations are performed as follows:
-Initially, X = 0.
---X: X is decremented by 1, X =  0 - 1 = -1.
-X++: X is incremented by 1, X = -1 + 1 =  0.
-X++: X is incremented by 1, X =  0 + 1 =  1.
 ```
+
+### Explanation 解釋: 
+
+The operations are performed as follows:
+
+操作如下
+
+Initially, `X = 0`.
+
+最初 `X = 0`
+
+`--X`: `X` is decremented by `1`, `X =  0 - 1 = -1`.
+
+`--X`: `X` 減 `1`， `X = 0 - 1 = -1`
+
+`X++`: `X` is incremented by `1`, `X = -1 + 1 =  0`.
+
+`X++`: `X` 加 `1`，`X = -1 + 1 = 0`
+
+`X++`: `X` is incremented by `1`, `X =  0 + 1 =  1`.
+
+`X++`: `X` 加 `1`，`X = 0 + 1 = 1`
 
 ### Example 2 範例:
 
 ```py 
 Input: operations = ["++X","++X","X++"]
+
 Output: 3
-Explanation: The operations are performed as follows:
-Initially, X = 0.
-++X: X is incremented by 1, X = 0 + 1 = 1.
-++X: X is incremented by 1, X = 1 + 1 = 2.
-X++: X is incremented by 1, X = 2 + 1 = 3.
 ```
+
+### Explanation 解釋: 
+
+The operations are performed as follows:
+
+操作如下
+
+Initially, `X = 0`.
+
+最初 `X = 0` 
+
+`++X`: `X` is incremented by `1`, `X = 0 + 1 = 1`.
+
+`++X`：`X` 加 `1`，`X = 0 + 1 = 1`
+
+`++X`: `X` is incremented by `1`, `X = 1 + 1 = 2`.
+
+`++X`：`X` 增加 `1`，`X = 1 + 1 = 2`
+
+`X++`: `X` is incremented by `1`, `X = 2 + 1 = 3`.
+
+`X++`：`X` 增加 `1`，`X = 2 + 1 = 3`
+
 
 ### Example 3 範例:
 
 ```py 
 Input: operations = ["X++","++X","--X","X--"]
+
 Output: 0
-Explanation: The operations are performed as follows:
-Initially, X = 0.
-X++: X is incremented by 1, X = 0 + 1 = 1.
-++X: X is incremented by 1, X = 1 + 1 = 2.
---X: X is decremented by 1, X = 2 - 1 = 1.
-X--: X is decremented by 1, X = 1 - 1 = 0.
 ```
+
+### Explanation 解釋: 
+
+The operations are performed as follows:
+
+操作如下
+
+Initially, `X = 0`.
+
+最初 `X = 0`
+
+`X++`: `X` is incremented by `1`, `X = 0 + 1 = 1`.
+
+`X++`：X增加 `1`，`X = 0 + 1 = 1`
+
+`++X`: `X` is incremented by `1`, `X = 1 + 1 = 2`.
+
+`++X`：`X` 增加 `1`，`X = 1 + 1 = 2`
+
+`--X`: `X` is decremented by `1`, `X = 2 - 1 = 1`.
+
+`--X`：`X` 減 `1`，`X = 2 - 1 = 1`
+
+`X--`: `X` is decremented by `1`, `X = 1 - 1 = 0`.
+
+`X--`：`X` 減 `1`，`X = 1 - 1 = 0`
 
 ### Constraints 限制:
 
@@ -331,13 +389,13 @@ You should convert Celsius into Kelvin and Fahrenheit and return it as an array 
 
 Return the array ans. 
 
-傳回數組 `ans`。
+傳回陣列 `ans`
 
 Answers within `10 - 5` of the actual answer will be accepted.
 
 與實際答案相差 `10 - 5` 以內的答案將被接受
 
-Note that 注意: 
+### Note that 注意: 
 
 ```py
 Kelvin = Celsius + 273.15
@@ -501,7 +559,7 @@ class Solution:
 
 # 位運算寫法
 # t << 1 將 t 左移 1 位，相當於 T * 2
-# 運算會比普通乘法快一些，但在 Python 差別不大。
+# 運算會比普通乘法快一些，但在 Python 差別不大
 
 
 class Solution:
@@ -512,7 +570,7 @@ class Solution:
 
 # 遞迴寫法
 # 如果 t 等於 0 ，返回 num
-# 每次遞迴讓 x 增加 2，並減少 t。
+# 每次遞迴讓 x 增加 2，並減少 t
 
 
 class Solution:
@@ -564,7 +622,7 @@ Input: n = 10, m = 3
 Output: 19
 ```
 
-### Explanation 解釋: In the given example:
+### Explanation 解釋: In the given example 在給定的範例中:
 
 - Integers in the range `[1, 10]` that are not divisible by `3` are `[1,2,4,5,7,8,10]`, `num1` is the sum of those integers = `37`.
 
@@ -583,7 +641,7 @@ Output: 19
 `Input: n = 5, m = 6`
 `Output: 15`
 
-### Explanation 解釋: In the given example:
+### Explanation 解釋: In the given example 在給定的範例中:
 
 - Integers in the range [1, 5] that are not divisible by 6 are [1,2,3,4,5], `num1` is the sum of those integers = `15`.
 
@@ -606,19 +664,19 @@ Input: n = 5, m = 1
 Output: -15
 ```
 
-### Explanation 解釋: In the given example:
+### Explanation 解釋: In the given example 在給定的範例中:
 
 - Integers in the range `[1, 5]` that are not divisible by `1` are `[]`, `num1` is the sum of those integers = `0`.
 
-在 `[1, 5]` 範圍內不能被 `1` 整除的數字是 `[]`，`num1` 是這些數字的總和
+    - 在 `[1, 5]` 範圍內不能被 `1` 整除的數字是 `[]`，`num1` 是這些數字的總和
 
 - Integers in the range [1, 5] that are divisible by 1 are [1,2,3,4,5], `num2` is the sum of those integers = `15`.
 
-在 `[1, 5] 範圍能被 `1` 整除的整數是 `[1, 2, 3, 4, 5]`， `num2` 是這些整數的總和
+    - 在 `[1, 5] 範圍能被 `1` 整除的整數是 `[1, 2, 3, 4, 5]`， `num2` 是這些整數的總和
 
 - We return `0 - 15 = -15` as the answer.
 
-我們返回 `0 - 15 = -15` 作為答案
+    - 我們返回 `0 - 15 = -15` 作為答案
  
 ### Constraints 限制:
 
@@ -763,7 +821,7 @@ class Solution:
 
 # 遞迴寫法
 # 遞迴呼叫自身來處理剩餘的字串
-# 每次遞迴計算第一個相鄰字元的 ASCII 絕對差，對剩餘的字串重複過程。
+# 每次遞迴計算第一個相鄰字元的 ASCII 絕對差，對剩餘的字串重複過程
 
 
 import numpy as np
@@ -789,11 +847,15 @@ In the town of Digitville, there was a list of numbers called `nums` containing 
 
 Each number was supposed to appear exactly once in the list, however, two mischievous numbers sneaked in an additional time, making the list longer than usual.
 
-每個數字應該只在清單中出現一次，但是兩個惡作劇的數字又偷偷出現了一次，使得清單比平常更長。
+每個數字應該只在清單中出現一次，但是兩個惡作劇的數字又偷偷出現了一次，使得清單比平常更長
 
-As the town detective, your task is to find these two sneaky numbers. Return an array of size two containing the two numbers (in any order), so peace can return to Digitville.
+As the town detective, your task is to find these two sneaky numbers. 
 
-身為鎮上的偵探，你的任務是找到這兩個鬼鬼祟祟的數字。傳回一個包含兩個數字（任意順序）的大小為 `2` 的陣列，這樣 Digitville 就可以恢復和平。
+身為鎮上的偵探，你的任務是找到這兩個鬼鬼祟祟的數字
+
+Return an array of size two containing the two numbers (in any order), so peace can return to Digitville.
+
+傳回一個包含兩個數字（任意順序）的大小為 `2` 的陣列，這樣 Digitville 就可以恢復和平
 
 ---
 
