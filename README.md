@@ -351,7 +351,7 @@ Initially, `X = 0`.
 
 最初 `X = 0`
 
-py```
+```py
 X++: X is incremented by 1, X = 0 + 1 = 1.
 X++：X 增加 1`，X = 0 + 1 = 1
 
@@ -636,7 +636,9 @@ Input: n = 10, m = 3
 Output: 19
 ```
 
-### Explanation 解釋: In the given example 在給定的範例中:
+### Explanation 解釋: 
+
+In the given example 在給定的範例中:
 
 - Integers in the range `[1, 10]` that are not divisible by `3` are `[1,2,4,5,7,8,10]`, `num1` is the sum of those integers = `37`.
 
@@ -657,7 +659,7 @@ Output: 19
 
 ### Explanation 解釋: 
 
-### In the given example 在給定的範例中:
+In the given example 在給定的範例中:
 
 - Integers in the range [1, 5] that are not divisible by 6 are [1,2,3,4,5], `num1` is the sum of those integers = `15`.
 
@@ -682,7 +684,7 @@ Output: -15
 
 ### Explanation 解釋: 
 
-### In the given example 在給定的範例中:
+In the given example 在給定的範例中:
 
 - Integers in the range `[1, 5]` that are not divisible by `1` are `[]`, `num1` is the sum of those integers = `0`.
 
