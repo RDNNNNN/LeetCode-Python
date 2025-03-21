@@ -277,17 +277,17 @@ Initially, `X = 0`.
 
 最初 `X = 0`
 
-`--X`: `X` is decremented by `1`, `X =  0 - 1 = -1`.
+py```
+--X: X is decremented by 1, X =  0 - 1 = -1.
+--X: X 減少 1， X = 0 - 1 = -1
 
-`--X`: `X` 減 `1`， `X = 0 - 1 = -1`
 
-`X++`: `X` is incremented by `1`, `X = -1 + 1 =  0`.
+X++: X is incremented by 1, X = -1 + 1 =  0.
+X++: X 增加 1，X = -1 + 1 = 0
 
-`X++`: `X` 加 `1`，`X = -1 + 1 = 0`
-
-`X++`: `X` is incremented by `1`, `X =  0 + 1 =  1`.
-
-`X++`: `X` 加 `1`，`X = 0 + 1 = 1`
+X++: X is incremented by 1, X =  0 + 1 =  1.
+X++: X 增加 1，X = 0 + 1 = 1
+```
 
 ### Example 2 範例:
 
@@ -307,18 +307,16 @@ Initially, `X = 0`.
 
 最初 `X = 0` 
 
-`++X`: `X` is incremented by `1`, `X = 0 + 1 = 1`.
+```py
+++X: X is incremented by 1, X = 0 + 1 = 1.
+++X：X 增加 1，X = 0 + 1 = 1
 
-`++X`：`X` 加 `1`，`X = 0 + 1 = 1`
+++X: X is incremented by 1, X = 1 + 1 = 2.
+++X：X 增加 1，X = 1 + 1 = 2
 
-`++X`: `X` is incremented by `1`, `X = 1 + 1 = 2`.
-
-`++X`：`X` 增加 `1`，`X = 1 + 1 = 2`
-
-`X++`: `X` is incremented by `1`, `X = 2 + 1 = 3`.
-
-`X++`：`X` 增加 `1`，`X = 2 + 1 = 3`
-
+X++: X is incremented by 1, X = 2 + 1 = 3.
+X++：X 增加 1，X = 2 + 1 = 3
+```
 
 ### Example 3 範例:
 
@@ -338,27 +336,28 @@ Initially, `X = 0`.
 
 最初 `X = 0`
 
-`X++`: `X` is incremented by `1`, `X = 0 + 1 = 1`.
+py```
+X++: X is incremented by 1, X = 0 + 1 = 1.
+X++：X 增加 1`，X = 0 + 1 = 1
 
-`X++`：X增加 `1`，`X = 0 + 1 = 1`
+++X: X is incremented by 1, X = 1 + 1 = 2.
+++X：X 增加 1，X = 1 + 1 = 2
 
-`++X`: `X` is incremented by `1`, `X = 1 + 1 = 2`.
+--X: X is decremented by 1, X = 2 - 1 = 1.
+--X：X 減少 1，X = 2 - 1 = 1
 
-`++X`：`X` 增加 `1`，`X = 1 + 1 = 2`
-
-`--X`: `X` is decremented by `1`, `X = 2 - 1 = 1`.
-
-`--X`：`X` 減 `1`，`X = 2 - 1 = 1`
-
-`X--`: `X` is decremented by `1`, `X = 1 - 1 = 0`.
-
-`X--`：`X` 減 `1`，`X = 1 - 1 = 0`
+X--: X is decremented by 1, X = 1 - 1 = 0.
+X--：X 減少 1，X = 1 - 1 = 0
+```
 
 ### Constraints 限制:
 
 ```py
 1 <= operations.length <= 100
+
 operations[i] will be either "++X", "X++", "--X", or "X--"
+
+operations[i] 將是 ++X、X++、--X 或 X--
 ```
 
 ---
