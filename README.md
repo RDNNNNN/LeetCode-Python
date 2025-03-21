@@ -36,9 +36,11 @@ ans = [nums[nums[0]], nums[nums[1]], nums[nums[2]], nums[nums[3]], nums[nums[4]]
 
 ### Constraints 限制:
 
-`1 <= nums.length <= 1000`
+```py
+1 <= nums.length <= 1000
 
-`0 <= nums[i] < nums.length`
+0 <= nums[i] < nums.length
+```
 
 The elements in `nums` are distinct.
 
@@ -68,7 +70,7 @@ class Solution:
         return [nums[nums[i]] for i in range(len(nums))]
     
 # 使用額外空間，即 O(n)
-# 取 nums[i] 作為索引，再去 nums[nums=[i]] 取得值並存入新陣列中
+# 取 nums[i] 作為索引，再去 nums[nums=[i]] 取得值並存入新串列中
 
 
 class Solution:
@@ -181,7 +183,7 @@ class Solution:
         return result
 
 # append() 寫法
-# 建立一個空的陣列 result，使用兩個迴圈將 nums 元素加入 result 兩次
+# 建立一個空的串列 result，使用兩個迴圈將 nums 元素加入 result 兩次
 # 每次 append() 操作都是 O(1)，但需要執行 2n 次
 # 直觀但效率較低
 
@@ -197,7 +199,7 @@ class Solution:
             result[i + n] = nums[i]
         return result
 
-# 建立一個長度為 2n 的空陣列 result (只包含 0)
+# 建立一個長度為 2n 的空串列 result (只包含 0)
 # 用迴圈將 nums[i] 加入對應的兩個位置 i 和 i + n
 
 
@@ -209,8 +211,8 @@ class Solution:
         return nums
 
 # extend() 寫法
-# extend() 會直接修改原本的 nums 陣列，將 nums 擴充 2 倍
-# 有效率但會影響原本的陣列
+# extend() 會直接修改原本的 nums 串列，將 nums 擴充 2 倍
+# 有效率但會影響原本的串列
 
 
 from typing import List
@@ -219,7 +221,7 @@ class Solution:
     def getConcatenation(self, nums: List[int]) -> List[int]:
         return nums + nums
 
-# nums + nums 會串接兩個 nums 陣列，產生新的 list
+# nums + nums 會串接兩個 nums 串列，產生新的 list
 # 直觀但需要額外的記憶體，因為創建了一個新的 list
 
 
@@ -237,11 +239,23 @@ class Solution:
 
 There is a programming language with only four operations and one variable `X`:
 
+有一種程式語言只有四個操作和一個變數`X`：
+
 `++X` and `X++` increments the value of the variable `X` by `1`.
+
+++X and X++ 將變數 X 的值增加 `1`
+
 `--X` and `X--` decrements the value of the variable `X` by `1`.
+
+--X and X-- 將變數 X 的值減少 `1`
+
 Initially, the value of `X` is `0`.
 
+最初，X 的值為 `0`
+
 Given an array of strings `operations` containing a list of operations, return the final value of `X` after performing all the operations.
+
+給定一個包含操作清單的字串操作數組，執行所有操作後傳回 `X` 的最終值
 
 ---
 
@@ -284,8 +298,10 @@ X--: X is decremented by 1, X = 1 - 1 = 0.
 
 ### Constraints 限制:
 
-`1 <= operations.length <= 100`
-`operations[i] will be either "++X", "X++", "--X", or "X--".`
+```py
+1 <= operations.length <= 100
+operations[i] will be either "++X", "X++", "--X", or "X--"
+```
 
 ---
 
@@ -307,20 +323,27 @@ class Solution:
 
 You are given a non-negative floating point number rounded to two decimal places celsius, that denotes the temperature in Celsius.
 
-您將獲得一個四捨五入到小數點後兩位攝氏度的非負浮點數，表示以攝氏度為單位的溫度。
+您將獲得一個四捨五入到小數點後兩位攝氏度的非負浮點數，表示以攝氏度為單位的溫度
 
 You should convert Celsius into Kelvin and Fahrenheit and return it as an array `ans = [kelvin, fahrenheit]`.
 
 您應該將攝氏度轉換為開氏溫度和華氏溫度，並將其作為陣列傳回 `ans = [kelvin, fahrenheit]`
 
-Return the array ans. Answers within 10-5 of the actual answer will be accepted.
+Return the array ans. 
 
-傳回數組 ans。與實際答案相差 10-5 以內的答案將被接受。
+傳回數組 `ans`。
+
+Answers within `10 - 5` of the actual answer will be accepted.
+
+與實際答案相差 `10 - 5` 以內的答案將被接受
 
 Note that 注意: 
 
+```py
 Kelvin = Celsius + 273.15
+
 Fahrenheit = Celsius * 1.80 + 32.00
+```
 
 ---
 
@@ -342,7 +365,9 @@ Explanation: Temperature at 122.11 Celsius converted in Kelvin is 395.26 and con
 
 ### Constraints 限制:
 
-`0 <= celsius <= 1000`
+```py
+0 <= celsius <= 1000
+```
 
 ---
 
@@ -510,27 +535,48 @@ class Solution:
 
 ## 2894. Divisible and Non-divisible Sums Difference
 
-You are given positive integers n and m.
+You are given positive integers `n` and `m`.
+
+給定正整數 `n` 和 `m`
 
 Define two integers as follows:
 
-num1: The sum of all integers in the range [1, n] (both inclusive) that are not divisible by m.
+定義兩個整數如下：
+
+num1: The sum of all integers in the range `[1, n]` (both inclusive) that are not divisible by `m`.
+
+num1：`[1, n]`（包括兩者）範圍內所有不能被 `m` 整除的整數總和
 
 num2: The sum of all integers in the range [1, n] (both inclusive) that are divisible by m.
-Return the integer num1 - num2.
+
+num2：`[1, n]`（包括兩者）範圍內所有能被 `m` 整除的整數總和
+
+Return the integer `num1 - num2`.
+
+傳回整數 `num1 - num2`
 
 ---
 
 ### Example 1 範例:
 
-`Input: n = 10, m = 3`
-`Output: 19`
+```py
+Input: n = 10, m = 3
+Output: 19
+```
+
 ### Explanation 解釋: In the given example:
 
-- Integers in the range [1, 10] that are not divisible by 3 are [1,2,4,5,7,8,10], num1 is the sum of those integers = 37.
+- Integers in the range `[1, 10]` that are not divisible by `3` are `[1,2,4,5,7,8,10]`, `num1` is the sum of those integers = `37`.
 
-- Integers in the range [1, 10] that are divisible by 3 are [3,6,9], num2 is the sum of those integers = 18.
-We return 37 - 18 = 19 as the answer.
+- `[1, 10]`範圍內不能被 `3` 整除的整數是 `[1, 2, 4, 5, 7, 8, 10]`，`num1` 是這些整數的總和 `37`
+
+- Integers in the range `[1, 10]` that are divisible by 3 are `[3,6,9]`, num2 is the sum of those integers = `18`.
+
+- [1, 10]範圍內可以被 `3` 整除的整數是 `[3, 6, 9]`，`num2` 是這些整數的總和 `18`
+
+- We return `37 - 18 = 19` as the answer.
+
+- 我們返回 `37 - 18 = 19` 作為答案
 
 ### Example 2 範例:
 
@@ -539,22 +585,40 @@ We return 37 - 18 = 19 as the answer.
 
 ### Explanation 解釋: In the given example:
 
-- Integers in the range [1, 5] that are not divisible by 6 are [1,2,3,4,5], num1 is the sum of those integers = 15.
+- Integers in the range [1, 5] that are not divisible by 6 are [1,2,3,4,5], `num1` is the sum of those integers = `15`.
+
+- `[1, 5]` 範圍內不能被 `6` 整除的數字是 `[1, 2, 3, 4, 5]，`num1` 是這些數字的總和 `15`
 
 - Integers in the range [1, 5] that are divisible by 6 are [], num2 is the sum of those integers = 0.
-We return 15 - 0 = 15 as the answer.
+
+
+- `[1, 5] 範圍內可以被 `6` 整除的整數是 `[]`，`num2` 是這些整數的總和 `0`
+
+- We return `15 - 0 = 15` as the answer.
+
+- 我們返回 `15 - 0 = 15` 作為答案
 
 ### Example 3 範例:
 
-`Input: n = 5, m = 1`
-`Output: -15`
+```py
+Input: n = 5, m = 1
+
+Output: -15
+```
 
 ### Explanation 解釋: In the given example:
 
-- Integers in the range [1, 5] that are not divisible by 1 are [], num1 is the sum of those integers = 0.
+- Integers in the range `[1, 5]` that are not divisible by `1` are `[]`, `num1` is the sum of those integers = `0`.
 
-- Integers in the range [1, 5] that are divisible by 1 are [1,2,3,4,5], num2 is the sum of those integers = 15.
-We return 0 - 15 = -15 as the answer.
+在 `[1, 5]` 範圍內不能被 `1` 整除的數字是 `[]`，`num1` 是這些數字的總和
+
+- Integers in the range [1, 5] that are divisible by 1 are [1,2,3,4,5], `num2` is the sum of those integers = `15`.
+
+在 `[1, 5] 範圍能被 `1` 整除的整數是 `[1, 2, 3, 4, 5]`， `num2` 是這些整數的總和
+
+- We return `0 - 15 = -15` as the answer.
+
+我們返回 `0 - 15 = -15` 作為答案
  
 ### Constraints 限制:
 
@@ -719,50 +783,75 @@ class Solution:
 
 ## 3289. The Two Sneaky Numbers of Digitville
 
-In the town of Digitville, there was a list of numbers called nums containing integers from 0 to n - 1. 
+In the town of Digitville, there was a list of numbers called `nums` containing integers from `0` to `n - 1`. 
+
+在 Digitville 鎮中，有一個名為 `nums` 的數字串列，其中包含從 `0` 到 `n - 1` 的整數
 
 Each number was supposed to appear exactly once in the list, however, two mischievous numbers sneaked in an additional time, making the list longer than usual.
 
+每個數字應該只在清單中出現一次，但是兩個惡作劇的數字又偷偷出現了一次，使得清單比平常更長。
+
 As the town detective, your task is to find these two sneaky numbers. Return an array of size two containing the two numbers (in any order), so peace can return to Digitville.
+
+身為鎮上的偵探，你的任務是找到這兩個鬼鬼祟祟的數字。傳回一個包含兩個數字（任意順序）的大小為 `2` 的陣列，這樣 Digitville 就可以恢復和平。
 
 ---
 
 ### Example 1 範例:
 
+```py
 Input: nums = [0,1,1,0]
 
 Output: [0,1]
+```
 
 ### Explanation 解釋:
 
-The numbers 0 and 1 each appear twice in the array.
+The numbers `0` and `1` each appear twice in the array.
+
+數字 `0` 和 `1` 在陣列中各出現兩次
 
 ### Example 2 範例:
 
+```py
 Input: nums = [0,3,2,1,3,2]
 
 Output: [2,3]
+```
 
 ### Explanation 解釋:
 
-The numbers 2 and 3 each appear twice in the array.
+The numbers `2` and `3` each appear twice in the array.
+
+數字 `2` 和 `3` 在陣列中各出現兩次
 
 ### Example 3 範例:
 
+```py
 Input: nums = [7,1,5,4,3,4,6,0,9,5,8,2]
 
 Output: [4,5]
+```
 
 ### Explanation 解釋:
 
-The numbers 4 and 5 each appear twice in the array.
+The numbers `4` and `5` each appear twice in the array.
+
+數字 `4` 和 `5` 在陣列中各出現兩次
 
 ### Constraints 限制:
 
+```py
 2 <= n <= 100
+
 nums.length == n + 2
+
 0 <= nums[i] < n
-The input is generated such that nums contains exactly two repeated elements.
+```
+
+The input is generated such that `nums` contains exactly two repeated elements.
+
+輸入的產生使得 `nums` 剛好包含兩個重複元素
 
 --- 
 
