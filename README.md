@@ -19,7 +19,9 @@ Input: nums = [0,2,1,5,3,4]
 Output: [0,1,2,4,5,3]
 ```
 
-Explanation 解釋: The array ans is built as follows 陣列的結構如下: 
+### Explanation 解釋: 
+
+The array ans is built as follows 陣列的結構如下: 
 
 ```py
 ans = [nums[nums[0]], nums[nums[1]], nums[nums[2]], nums[nums[3]], nums[nums[4]], nums[nums[5]]]
@@ -35,7 +37,9 @@ Input: nums = [5,0,1,2,3,4]
 Output: [4,5,0,1,2,3]
 ```
 
-Explanation 解釋: The array ans is built as follows 陣列的結構如下:
+### Explanation 解釋: 
+
+The array ans is built as follows 陣列的結構如下:
 
 ```py
 ans = [nums[nums[0]], nums[nums[1]], nums[nums[2]], nums[nums[3]], nums[nums[4]], nums[nums[5]]]
@@ -61,7 +65,7 @@ The elements in `nums` are distinct.
 
 Can you solve it without using an extra space (i.e., O(1) memory)? 
 
-你能在不使用額外空間（即O(1)記憶體）的情況下解決這個問題嗎？
+你能在不使用額外空間（即 `O(1)` 記憶體）的情況下解決這個問題嗎？
 
 ### 額外空間:
 
@@ -246,7 +250,7 @@ class Solution:
 # 直觀但需要額外的記憶體，因為創建了新的 list
 ```
 
-## 2011. Final Value of Variable After Performing Operations
+## 2011. Final Value of Variable After Performing Operations 執行操作後的變數最終值
 
 There is a programming language with only four operations and one variable `X`:
 
@@ -254,19 +258,19 @@ There is a programming language with only four operations and one variable `X`:
 
 `++X` and `X++` increments the value of the variable `X` by `1`.
 
-++X and X++ 將變數 X 的值增加 `1`
+`++X` and `X++` 將變數 `X` 的值增加 `1`
 
 `--X` and `X--` decrements the value of the variable `X` by `1`.
 
---X and X-- 將變數 X 的值減少 `1`
+`--X` and `X--` 將變數 `X` 的值減少 `1`
 
 Initially, the value of `X` is `0`.
 
-最初，X 的值為 `0`
+最初，`X` 的值為 `0`
 
 Given an array of strings `operations` containing a list of operations, return the final value of `X` after performing all the operations.
 
-給定一個包含操作清單的字串操作數組，執行所有操作後傳回 `X` 的最終值
+給定一個包含操作清單的字串操作陣列，執行所有操作後傳回 `X` 的最終值
 
 ---
 
@@ -288,7 +292,7 @@ Initially, `X = 0`.
 
 最初 `X = 0`
 
-py```
+```py
 --X: X is decremented by 1, X =  0 - 1 = -1.
 --X: X 減少 1， X = 0 - 1 = -1
 
@@ -651,7 +655,9 @@ Output: 19
 `Input: n = 5, m = 6`
 `Output: 15`
 
-### Explanation 解釋: In the given example 在給定的範例中:
+### Explanation 解釋: 
+
+### In the given example 在給定的範例中:
 
 - Integers in the range [1, 5] that are not divisible by 6 are [1,2,3,4,5], `num1` is the sum of those integers = `15`.
 
@@ -674,7 +680,9 @@ Input: n = 5, m = 1
 Output: -15
 ```
 
-### Explanation 解釋: In the given example 在給定的範例中:
+### Explanation 解釋: 
+
+### In the given example 在給定的範例中:
 
 - Integers in the range `[1, 5]` that are not divisible by `1` are `[]`, `num1` is the sum of those integers = `0`.
 
@@ -849,11 +857,11 @@ class Solution:
 # np.sum() 計算總和
 ```
 
-## 3289. The Two Sneaky Numbers of Digitville
+## 3289. The Two Sneaky Numbers of Digitville 數字小鎮裡的兩個神秘數字
 
 In the town of Digitville, there was a list of numbers called `nums` containing integers from `0` to `n - 1`. 
 
-在 Digitville 鎮中，有一個名為 `nums` 的數字串列，其中包含從 `0` 到 `n - 1` 的整數
+在數字小鎮中，有一個名為 `nums` 的數字串列，其中包含從 `0` 到 `n - 1` 的整數
 
 Each number was supposed to appear exactly once in the list, however, two mischievous numbers sneaked in an additional time, making the list longer than usual.
 
@@ -865,7 +873,7 @@ As the town detective, your task is to find these two sneaky numbers.
 
 Return an array of size two containing the two numbers (in any order), so peace can return to Digitville.
 
-傳回一個包含兩個數字（任意順序）的大小為 `2` 的陣列，這樣 Digitville 就可以恢復和平
+傳回一個包含兩個數字（任意順序）的大小為 `2` 的陣列，這樣數字小鎮就可以恢復和平
 
 ---
 
