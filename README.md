@@ -6,7 +6,7 @@ Given a zero-based permutation `nums` (0-indexed), build an array `ans` of the s
 
 A zero-based permutation `nums` is an array of distinct integers from `0` to `nums.length - 1 (inclusive)`.
 
-從 `0` 開始的排列 `nums` 是從 `0` 到 `nums.length -1` 的不同整數陣列
+從 `0` 開始的排列 `nums` 是從 `0` 到 `nums.length - 1` 的不同整數陣列
 
 ---
 
@@ -690,7 +690,7 @@ Integers in the range `[1, 5]` that are not divisible by `1` are `[]`, `num1` is
 
 Integers in the range [1, 5] that are divisible by 1 are [1,2,3,4,5], `num2` is the sum of those integers = `15`.
 
-在 `[1, 5] 範圍能被 `1` 整除的整數是 `[1, 2, 3, 4, 5]`， `num2` 是這些整數的總和
+在 `[1, 5]` 範圍能被 `1` 整除的整數是 `[1, 2, 3, 4, 5]`， `num2` 是這些整數的總和
 
 We return `0 - 15 = -15` as the answer.
 
