@@ -479,9 +479,11 @@ Given two integers, num and t. A number x is achievable if it can become equal t
 
 Increase or decrease `x` by `1`, and simultaneously increase or decrease `num` by `1`.
 
+將 `x` 增加或減少 `1` ，同時將 `num` 增加或減少 `1`
+
 Return the maximum possible value of `x`.
 
-將 `x` 增加或減少 `1` ，同時將 `num` 增加或減少 `1`，回傳 `x` 可能的最大值
+回傳 `x` 可能的最大值
 
 ### 懶人包
 
