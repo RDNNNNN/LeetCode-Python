@@ -12,32 +12,32 @@ A zero-based permutation `nums` is an array of distinct integers from `0` to `nu
 
 ### Example 1 範例:
 
-```py 
+```py
 Input: nums = [0,2,1,5,3,4]
 
 
 Output: [0,1,2,4,5,3]
 ```
 
-### Explanation 解釋: 
+### Explanation 解釋:
 
-The array ans is built as follows 陣列的結構如下: 
+The array ans is built as follows 陣列結構如下:
 
 ```py
 ans = [nums[nums[0]], nums[nums[1]], nums[nums[2]], nums[nums[3]], nums[nums[4]], nums[nums[5]]]
     = [nums[0], nums[2], nums[1], nums[5], nums[3], nums[4]]
     = [0,1,2,4,5,3]
 ```
-    
+
 ### Example 2 範例:
 
-```py 
+```py
 Input: nums = [5,0,1,2,3,4]
 
 Output: [4,5,0,1,2,3]
 ```
 
-### Explanation 解釋: 
+### Explanation 解釋:
 
 The array ans is built as follows 陣列的結構如下:
 
@@ -61,9 +61,9 @@ The elements in `nums` are distinct.
 
 `nums` 中的元素是不同的
 
-### Follow-up 額外要求: 
+### Follow-up 額外要求:
 
-Can you solve it without using an extra space (i.e., O(1) memory)? 
+Can you solve it without using an extra space (i.e., O(1) memory)?
 
 你能在不使用額外空間（即 `O(1)` 記憶體）的情況下解決這個問題嗎？
 
@@ -79,11 +79,11 @@ O 為 Order 的意思
 
 ### Code
 
-```py 
+```py
 class Solution:
     def buildArray(self, nums: List[int]) -> List[int]:
         return [nums[nums[i]] for i in range(len(nums))]
-    
+
 # 使用額外空間，即 O(n)
 # 取 nums[i] 作為索引，再去 nums[nums=[i]] 取得值並存入新串列中
 
@@ -91,17 +91,17 @@ class Solution:
 class Solution:
     def buildArray(self, nums: List[int]) -> List[int]:
         n = len(nums)
-        
+
         for i in range(n):
             # nums[nums[i]] % n 可以取出原始的 nums[nums[i]] 值
             nums[i] += (nums[nums[i]] % n) * n
-        
+
         # 將新值提取出來
         for i in range(n):
             nums[i] //= n
-        
+
         return nums
-    
+
 # 不使用額外空間，即 O(1)
 ```
 
@@ -141,9 +141,7 @@ Output: [1, 2, 1, 1, 2, 1]
 
 ### Explanation 解釋:
 
-The array ans is formed as follows:
-
-陣列的結構如下
+The array ans is formed as follows 陣列結構如下:
 
 ```py
 - ans = [nums[0], nums[1], nums[2], nums[0], nums[1], nums[2]]
@@ -161,9 +159,7 @@ Output: [1, 3, 2, 1, 1, 3, 2, 1]
 
 ### Explanation 解釋:
 
-The array ans is formed as follows:
-
-陣列的結構如下
+The array ans is formed as follows 陣列結構如下:
 
 ```py
 - ans = [nums[0], nums[1], nums[2], nums[3], nums[0], nums[1], nums[2], nums[3]]
@@ -186,8 +182,6 @@ n == nums.length
 ### Code
 
 ```py
-from typing import List
-
 class Solution:
     def getConcatenation(self, nums: List[int]) -> List[int]:
         result = []
@@ -203,8 +197,6 @@ class Solution:
 # 直觀但效率較低
 
 
-from typing import List
-
 class Solution:
     def getConcatenation(self, nums: List[int]) -> List[int]:
         n = len(nums)
@@ -218,8 +210,6 @@ class Solution:
 # 用迴圈將 nums[i] 加入對應的兩個位置 i 和 i + n
 
 
-from typing import List
-
 class Solution:
     def getConcatenation(self, nums: List[int]) -> List[int]:
         nums.extend(nums)
@@ -230,8 +220,6 @@ class Solution:
 # 有效率但會影響原本的串列
 
 
-from typing import List
-
 class Solution:
     def getConcatenation(self, nums: List[int]) -> List[int]:
         return nums + nums
@@ -239,8 +227,6 @@ class Solution:
 # nums + nums 會串接兩個 nums 串列，產生新的 list
 # 直觀但需要額外的記憶體，因為創建了一個新的 list
 
-
-from typing import List
 
 class Solution:
     def getConcatenation(self, nums: List[int]) -> List[int]:
@@ -276,13 +262,13 @@ Given an array of strings `operations` containing a list of operations, return t
 
 ### Example 1 範例:
 
-```py 
+```py
 Input: operations = ["--X","X++","X++"]
 
 Output: 1
 ```
 
-### Explanation 解釋: 
+### Explanation 解釋:
 
 The operations are performed as follows 操作如下:
 
@@ -304,19 +290,19 @@ X++: X 增加 1，X = 0 + 1 = 1
 
 ### Example 2 範例:
 
-```py 
+```py
 Input: operations = ["++X","++X","X++"]
 
 Output: 3
 ```
 
-### Explanation 解釋: 
+### Explanation 解釋:
 
 The operations are performed as follows 操作如下:
 
 Initially, `X = 0`.
 
-最初 `X = 0` 
+最初 `X = 0`
 
 ```py
 ++X: X is incremented by 1, X = 0 + 1 = 1.
@@ -331,13 +317,13 @@ X++：X 增加 1，X = 2 + 1 = 3
 
 ### Example 3 範例:
 
-```py 
+```py
 Input: operations = ["X++","++X","--X","X--"]
 
 Output: 0
 ```
 
-### Explanation 解釋: 
+### Explanation 解釋:
 
 The operations are performed as follows 操作如下:
 
@@ -373,13 +359,13 @@ operations[i] 將是 ++X、X++、--X 或 X--
 
 ### Code
 
-```py 
+```py
 class Solution:
     def finalValueAfterOperations(self, operations: List[str]) -> int:
         result = 0
         for i in operations:
             if i == "++X" or i == "X++":
-                result += 1       
+                result += 1
             elif i == "--X" or i == "X--":
                 result -= 1
         return  result
@@ -395,7 +381,7 @@ You should convert Celsius into Kelvin and Fahrenheit and return it as an array 
 
 您應該將攝氏度轉換為開氏溫度和華氏溫度，並將其作為陣列傳回 `ans = [kelvin, fahrenheit]`
 
-Return the array ans. 
+Return the array ans.
 
 傳回陣列 `ans`
 
@@ -403,7 +389,7 @@ Answers within `10 - 5` of the actual answer will be accepted.
 
 與實際答案相差 `10 - 5` 以內的答案將被接受
 
-### Note that 注意: 
+### Note that 注意:
 
 ```py
 Kelvin = Celsius + 273.15
@@ -438,15 +424,16 @@ Explanation: Temperature at 122.11 Celsius converted in Kelvin is 395.26 and con
 ---
 
 ### Code
-```py 
+
+```py
 class Solution:
     def convertTemperature(self, celsius: float) -> List[float]:
         kelvin = celsius + 273.15
         fahrenheit = celsius * 1.8 + 32
         return [kelvin, fahrenheit]
-    
+
 # 設定開氏跟華氏的溫度
-    
+
 
 class Solution:
     def convertTemperature(self, celsius: float) -> List[float]:
@@ -601,7 +588,7 @@ class Solution:
 # [-1] 取出列表中的最後一個元素，也就是 x 增加到最大後的值
 ```
 
-## 2894. Divisible and Non-divisible Sums Difference
+## 2894. Divisible and Non-divisible Sums Difference 可整除和不可整除的金額差異
 
 You are given positive integers `n` and `m`.
 
@@ -629,10 +616,11 @@ Return the integer `num1 - num2`.
 
 ```py
 Input: n = 10, m = 3
+
 Output: 19
 ```
 
-### Explanation 解釋: 
+### Explanation 解釋:
 
 In the given example 在給定的範例中:
 
@@ -656,17 +644,17 @@ Input: n = 5, m = 6
 Output: 15
 ```
 
-### Explanation 解釋: 
+### Explanation 解釋:
 
-In the given example 在給定的範例中:
+In the given example 在給定範例中:
 
 Integers in the range [1, 5] that are not divisible by 6 are [1,2,3,4,5], `num1` is the sum of those integers = `15`.
 
-`[1, 5]` 範圍內不能被 `6` 整除的數字是 `[1, 2, 3, 4, 5]，`num1` 是這些數字的總和 `15`
+`[1, 5]` 範圍內不能被 `6` 整除的數字是 `[1, 2, 3, 4, 5]，`num1`是這些數字的總和`15`
 
 Integers in the range [1, 5] that are divisible by 6 are [], num2 is the sum of those integers = 0.
 
-`[1, 5] 範圍內可以被 `6` 整除的整數是 `[]`，`num2` 是這些整數的總和 `0`
+`[1, 5] 範圍內可以被 `6`整除的整數是`[]`，`num2`是這些整數的總和`0`
 
 We return `15 - 0 = 15` as the answer.
 
@@ -680,9 +668,9 @@ Input: n = 5, m = 1
 Output: -15
 ```
 
-### Explanation 解釋: 
+### Explanation 解釋:
 
-In the given example 在給定的範例中:
+In the given example 在給定範例中:
 
 Integers in the range `[1, 5]` that are not divisible by `1` are `[]`, `num1` is the sum of those integers = `0`.
 
@@ -695,7 +683,7 @@ Integers in the range [1, 5] that are divisible by 1 are [1,2,3,4,5], `num2` is 
 We return `0 - 15 = -15` as the answer.
 
 我們返回 `0 - 15 = -15` 作為答案
- 
+
 ### Constraints 限制:
 
 ```py
@@ -705,18 +693,19 @@ We return `0 - 15 = -15` as the answer.
 ---
 
 ### Code
-```py 
+
+```py
 class Solution:
     def differenceOfSums(self, n: int, m: int) -> int:
         num1 = 0
         num2 = 0
-        
+
         for i in range(1, n + 1):
-            if i % m == 0:        
+            if i % m == 0:
                 num += i
 
         for j in range(1, n + 1):
-            if j % m != 0:        
+            if j % m != 0:
                 num2 += j
         return num2 - num1
 ```
@@ -725,9 +714,11 @@ class Solution:
 
 You are given a string `s`.
 
+給定一個字串 `s`
+
 The score of a string is defined as the sum of the absolute difference between the ASCII values of adjacent characters.
 
-給定一個字串 `s`，字串的分數定義為相鄰字元的 ASCII 值之間的絕對差之和
+字串的分數定義為相鄰字元的 ASCII 值之間的絕對差之和
 
 Return the score of `s`.
 
@@ -747,7 +738,10 @@ Output: 13
 
 ```py
 The ASCII values of the characters in s are: 'h' = 104, 'e' = 101, 'l' = 108, 'o' = 111.
+s中字元的ASCII值為：'h' = 104, 'e' = 101, 'l' = 108, 'o' = 111.
+
 So, the score of s would be |104 - 101| + |101 - 108| + |108 - 108| + |108 - 111| = 3 + 7 + 0 + 3 = 13.
+所以， s 的分數會是
 ```
 
 ### Example 2 範例:
@@ -762,7 +756,10 @@ Output: 50
 
 ```py
 The ASCII values of the characters in s are: 'z' = 122, 'a' = 97.
+s 中字元的 ASCII 值為：'z' = 122, 'a' = 97.
+
 So, the score of s would be |122 - 97| + |97 - 122| = 25 + 25 = 50.
+所以， s 的分數會是 |122 - 97| + |97 - 122| = 25 + 25 = 50.
 ```
 
 ### Constraints 限制:
@@ -861,7 +858,7 @@ class Solution:
 
 ## 3289. The Two Sneaky Numbers of Digitville 數字小鎮裡的兩個神秘數字
 
-In the town of Digitville, there was a list of numbers called `nums` containing integers from `0` to `n - 1`. 
+In the town of Digitville, there was a list of numbers called `nums` containing integers from `0` to `n - 1`.
 
 在數字小鎮中，有一個名為 `nums` 的數字串列，其中包含從 `0` 到 `n - 1` 的整數
 
@@ -869,7 +866,7 @@ Each number was supposed to appear exactly once in the list, however, two mischi
 
 每個數字應該只在清單中出現一次，但是兩個惡作劇的數字又偷偷出現了一次，使得清單比平常更長
 
-As the town detective, your task is to find these two sneaky numbers. 
+As the town detective, your task is to find these two sneaky numbers.
 
 身為鎮上的偵探，你的任務是找到這兩個鬼鬼祟祟的數字
 
@@ -935,11 +932,11 @@ The input is generated such that `nums` contains exactly two repeated elements.
 
 輸入的產生使得 `nums` 剛好包含兩個重複元素
 
---- 
+---
 
 ### Code
 
-```py 
+```py
 class Solution:
     def getSneakyNumbers(self, nums: List[int]) -> List[int]:
         result = []
