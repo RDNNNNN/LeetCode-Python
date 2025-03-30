@@ -403,17 +403,29 @@ Fahrenheit = Celsius * 1.80 + 32.00
 
 ```py
 Input: celsius = 36.50
+
 Output: [309.65000,97.70000]
-Explanation: Temperature at 36.50 Celsius converted in Kelvin is 309.65 and converted in Fahrenheit is 97.70.
 ```
+
+### Explanation 解釋: 
+
+Temperature at 36.50 Celsius converted in Kelvin is 309.65 and converted in Fahrenheit is 97.70.
+
+36.50 攝氏度的溫度換算為克爾文為 309.65，換算為華氏度為 97.70。
 
 ### Example 2 範例:
 
 ```py
 Input: celsius = 122.11
+
 Output: [395.26000,251.79800]
-Explanation: Temperature at 122.11 Celsius converted in Kelvin is 395.26 and converted in Fahrenheit is 251.798.
 ```
+
+### Explanation 解釋: 
+
+Temperature at 122.11 Celsius converted in Kelvin is 395.26 and converted in Fahrenheit is 251.798.
+
+122.11 攝氏度的溫度換算為克爾文為 395.26，換算為華氏溫度為 251.798。
 
 ### Constraints 限制:
 
@@ -432,7 +444,7 @@ class Solution:
         fahrenheit = celsius * 1.8 + 32
         return [kelvin, fahrenheit]
 
-# 設定開氏跟華氏的溫度
+# 設定克爾文跟華氏的溫度
 
 
 class Solution:
