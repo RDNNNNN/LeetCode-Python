@@ -15,7 +15,6 @@ A zero-based permutation `nums` is an array of distinct integers from `0` to `nu
 ```py
 Input: nums = [0,2,1,5,3,4]
 
-
 Output: [0,1,2,4,5,3]
 ```
 
@@ -39,7 +38,7 @@ Output: [4,5,0,1,2,3]
 
 ### Explanation 解釋:
 
-The array ans is built as follows 陣列的結構如下:
+The array ans is built as follows 陣列結構如下:
 
 ```py
 ans = [nums[nums[0]], nums[nums[1]], nums[nums[2]], nums[nums[3]], nums[nums[4]], nums[nums[5]]]
@@ -144,9 +143,9 @@ Output: [1, 2, 1, 1, 2, 1]
 The array ans is formed as follows 陣列結構如下:
 
 ```py
-- ans = [nums[0], nums[1], nums[2], nums[0], nums[1], nums[2]]
+ans = [nums[0], nums[1], nums[2], nums[0], nums[1], nums[2]]
 
-- ans = [1, 2, 1, 1, 2, 1]
+ans = [1, 2, 1, 1, 2, 1]
 ```
 
 ### Example 2 範例:
@@ -162,9 +161,9 @@ Output: [1, 3, 2, 1, 1, 3, 2, 1]
 The array ans is formed as follows 陣列結構如下:
 
 ```py
-- ans = [nums[0], nums[1], nums[2], nums[3], nums[0], nums[1], nums[2], nums[3]]
+ans = [nums[0], nums[1], nums[2], nums[3], nums[0], nums[1], nums[2], nums[3]]
 
-- ans = [1, 3, 2, 1, 1, 3, 2, 1]
+ans = [1, 3, 2, 1, 1, 3, 2, 1]
 ```
 
 ### Constraints 限制:
