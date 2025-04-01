@@ -1,10 +1,14 @@
 ## 1920. Build Array from Permutation 根據排列建立陣列
 
+### 題目
+
 Given a zero-based permutation `nums` (0-indexed), build an array `ans` of the same length where `ans[i] = nums[nums[i]]` for each `0 <= i < nums.length` and `return` it.
 
-給定一個從 `0` 開始的排列 `nums` (從 `0` 開始索引)，建立一個相同長度的陣列 `ans`，每個 `0 <= i < nums.length`，`ans[i] = nums[nums[i]]` 並返回它
-
 A zero-based permutation `nums` is an array of distinct integers from `0` to `nums.length - 1 (inclusive)`.
+
+### 中文
+
+給定一個從 `0` 開始的排列 `nums` (從 `0` 開始索引)，建立一個相同長度的陣列 `ans`，每個 `0 <= i < nums.length`，`ans[i] = nums[nums[i]]` 並返回它
 
 從 `0` 開始的排列 `nums` 是從 `0` 到 `nums.length - 1` 的不同整數陣列
 
@@ -106,15 +110,19 @@ class Solution:
 
 ## 1929. Concatenation of Array 陣列連接
 
-Given an integer array `nums` of length `n`, you want to create an array `ans` of length `2n` where `ans[i] == nums[i]` and `ans[i + n] == nums[i]` for `0 <= i < n` (0-indexed).
+### 題目
 
-給定一個長度為 `n` 的整數陣列，你要建立一個長度為 `2n` 的陣列 `ans`，其中 `ans[i] == nums[i]` 和 `ans[i + n] == nums[i]`，表示 `0 <= i < n` (從 0 開始索引)
+Given an integer array `nums` of length `n`, you want to create an array `ans` of length `2n` where `ans[i] == nums[i]` and `ans[i + n] == nums[i]` for `0 <= i < n` (0-indexed).
 
 Specifically, `ans` is the concatenation of two `nums` arrays.
 
-具體來說，`ans` 是兩個陣列的連接
-
 Return the array `ans`.
+
+### 中文
+
+給定一個長度為 `n` 的整數陣列，你要建立一個長度為 `2n` 的陣列 `ans`，其中 `ans[i] == nums[i]` 和 `ans[i + n] == nums[i]`，表示 `0 <= i < n` (從 0 開始索引)
+
+具體來說，`ans` 是兩個陣列的連接
 
 回傳陣列 `ans`
 
@@ -237,23 +245,27 @@ class Solution:
 
 ## 2011. Final Value of Variable After Performing Operations 執行操作後的變數最終值
 
-There is a programming language with only four operations and one variable `X`:
+### 題目
 
-有一種程式語言只有四個操作和一個變數`X`：
+There is a programming language with only four operations and one variable `X`:
 
 `++X` and `X++` increments the value of the variable `X` by `1`.
 
-`++X` and `X++` 將變數 `X` 的值增加 `1`
-
 `--X` and `X--` decrements the value of the variable `X` by `1`.
-
-`--X` and `X--` 將變數 `X` 的值減少 `1`
 
 Initially, the value of `X` is `0`.
 
-最初，`X` 的值為 `0`
-
 Given an array of strings `operations` containing a list of operations, return the final value of `X` after performing all the operations.
+
+### 中文
+
+有一種程式語言只有四個操作和一個變數`X`：
+
+`++X` and `X++` 將變數 `X` 的值增加 `1`
+
+`--X` and `X--` 將變數 `X` 的值減少 `1`
+
+最初，`X` 的值為 `0`
 
 給定一個包含操作清單的字串操作陣列，執行所有操作後傳回 `X` 的最終值
 
@@ -271,9 +283,7 @@ Output: 1
 
 The operations are performed as follows 操作如下:
 
-Initially, `X = 0`.
-
-最初 `X = 0`
+Initially 最初, `X = 0`.
 
 ```py
 --X: X is decremented by 1, X =  0 - 1 = -1.
@@ -299,9 +309,7 @@ Output: 3
 
 The operations are performed as follows 操作如下:
 
-Initially, `X = 0`.
-
-最初 `X = 0`
+Initially 最初, `X = 0`.
 
 ```py
 ++X: X is incremented by 1, X = 0 + 1 = 1.
@@ -326,9 +334,7 @@ Output: 0
 
 The operations are performed as follows 操作如下:
 
-Initially, `X = 0`.
-
-最初 `X = 0`
+Initially 最初, `X = 0`.
 
 ```py
 X++: X is incremented by 1, X = 0 + 1 = 1.
@@ -372,19 +378,23 @@ class Solution:
 
 ## 2469. Convert the Temperature 轉換溫度
 
-You are given a non-negative floating point number rounded to two decimal places celsius, that denotes the temperature in Celsius.
+### 題目
 
-您將獲得一個四捨五入到小數點後兩位攝氏度的非負浮點數，表示以攝氏度為單位的溫度
+You are given a non-negative floating point number rounded to two decimal places celsius, that denotes the temperature in Celsius.
 
 You should convert Celsius into Kelvin and Fahrenheit and return it as an array `ans = [kelvin, fahrenheit]`.
 
-您應該將攝氏度轉換為開氏溫度和華氏溫度，並將其作為陣列傳回 `ans = [kelvin, fahrenheit]`
-
 Return the array ans.
 
-傳回陣列 `ans`
-
 Answers within `10 - 5` of the actual answer will be accepted.
+
+### 中文
+
+您將獲得一個四捨五入到小數點後兩位攝氏度的非負浮點數，表示以攝氏度為單位的溫度
+
+您應該將攝氏度轉換為開氏溫度和華氏溫度，並將其作為陣列傳回 `ans = [kelvin, fahrenheit]`
+
+傳回陣列 `ans`
 
 與實際答案相差 `10 - 5` 以內的答案將被接受
 
@@ -471,15 +481,17 @@ class Solution:
 
 ## 2769. Find the Maximum Achievable Number 找到可實現的最大數字
 
-Given two integers, num and t. A number x is achievable if it can become equal to num after applying the following operation at most t times:
+### 題目
 
-給兩個整數 `num` 跟 `t`，如果數字 `x` 能在最多 `t` 次運算後為 `num`，則該數字是可實現的
+Given two integers, num and t. A number x is achievable if it can become equal to num after applying the following operation at most t times:
 
 Increase or decrease `x` by `1`, and simultaneously increase or decrease `num` by `1`.
 
-將 `x` 增加或減少 `1` ，同時將 `num` 增加或減少 `1`
-
 Return the maximum possible value of `x`.
+
+給兩個整數 `num` 跟 `t`，如果數字 `x` 能在最多 `t` 次運算後為 `num`，則該數字是可實現的
+
+將 `x` 增加或減少 `1` ，同時將 `num` 增加或減少 `1`
 
 回傳 `x` 可能的最大值
 
@@ -502,9 +514,9 @@ Output: 6
 
 Apply the following operation once to make the maximum achievable number equal to `num`:
 
-使用以下操作一次，使最大的可實現數字為 `num`
-
 Decrease the maximum achievable number by `1`, and increase num by `1`.
+
+使用以下操作一次，使最大的可實現數字為 `num`
 
 將最大的可實現數量減少 `1`，並將數量增加 `1`
 
@@ -520,9 +532,9 @@ Output: 7
 
 Apply the following operation twice to make the maximum achievable number equal to `num`:
 
-使用以下操作兩次，使最大的可實現數字為 `num`
-
 Decrease the maximum achievable number by `1`, and increase `num` by `1`.
+
+使用以下操作兩次，使最大的可實現數字為 `num`
 
 將最大的可實現數量減少 `1`，並將數量增加 `1`
 
@@ -601,23 +613,27 @@ class Solution:
 
 ## 2894. Divisible and Non-divisible Sums Difference 可整除和不可整除的金額差異
 
-You are given positive integers `n` and `m`.
+### 題目
 
-給定正整數 `n` 和 `m`
+You are given positive integers `n` and `m`.
 
 Define two integers as follows:
 
-定義兩個整數如下：
-
 num1: The sum of all integers in the range `[1, n]` (both inclusive) that are not divisible by `m`.
-
-num1：`[1, n]`（包括兩者）範圍內所有不能被 `m` 整除的整數總和
 
 num2: The sum of all integers in the range [1, n] (both inclusive) that are divisible by m.
 
-num2：`[1, n]`（包括兩者）範圍內所有能被 `m` 整除的整數總和
-
 Return the integer `num1 - num2`.
+
+### 中文
+
+給定正整數 `n` 和 `m`
+
+定義兩個整數如下：
+
+num1：`[1, n]`（包括兩者）範圍內所有不能被 `m` 整除的整數總和
+
+num2：`[1, n]`（包括兩者）範圍內所有能被 `m` 整除的整數總和
 
 傳回整數 `num1 - num2`
 
@@ -637,13 +653,13 @@ In the given example 在給定的範例中:
 
 Integers in the range `[1, 10]` that are not divisible by `3` are `[1,2,4,5,7,8,10]`, `num1` is the sum of those integers = `37`.
 
-`[1, 10]`範圍內不能被 `3` 整除的整數是 `[1, 2, 4, 5, 7, 8, 10]`，`num1` 是這些整數的總和 `37`
-
 Integers in the range `[1, 10]` that are divisible by 3 are `[3,6,9]`, num2 is the sum of those integers = `18`.
 
-`[1, 10]` 範圍內可以被 `3` 整除的整數是 `[3, 6, 9]` ， `num2` 是這些整數的總和 `18`
-
 We return `37 - 18 = 19` as the answer.
+
+`[1, 10]`範圍內不能被 `3` 整除的整數是 `[1, 2, 4, 5, 7, 8, 10]`，`num1` 是這些整數的總和 `37`
+
+`[1, 10]` 範圍內可以被 `3` 整除的整數是 `[3, 6, 9]` ， `num2` 是這些整數的總和 `18`
 
 我們返回 `37 - 18 = 19` 作為答案
 
@@ -661,13 +677,13 @@ In the given example 在給定範例中:
 
 Integers in the range [1, 5] that are not divisible by 6 are [1,2,3,4,5], `num1` is the sum of those integers = `15`.
 
-`[1, 5]` 範圍內不能被 `6` 整除的數字是 `[1, 2, 3, 4, 5]，`num1`是這些數字的總和`15`
-
 Integers in the range [1, 5] that are divisible by 6 are [], num2 is the sum of those integers = 0.
 
-`[1, 5] 範圍內可以被 `6`整除的整數是`[]`，`num2`是這些整數的總和`0`
-
 We return `15 - 0 = 15` as the answer.
+
+`[1, 5]` 範圍內不能被 `6` 整除的數字是 `[1, 2, 3, 4, 5]，`num1`是這些數字的總和`15`
+
+`[1, 5] 範圍內可以被 `6`整除的整數是`[]`，`num2`是這些整數的總和`0`
 
 我們返回 `15 - 0 = 15` 作為答案
 
@@ -685,13 +701,13 @@ In the given example 在給定範例中:
 
 Integers in the range `[1, 5]` that are not divisible by `1` are `[]`, `num1` is the sum of those integers = `0`.
 
-在 `[1, 5]` 範圍內不能被 `1` 整除的數字是 `[]`，`num1` 是這些數字的總和
-
 Integers in the range [1, 5] that are divisible by 1 are [1,2,3,4,5], `num2` is the sum of those integers = `15`.
 
-在 `[1, 5]` 範圍能被 `1` 整除的整數是 `[1, 2, 3, 4, 5]`， `num2` 是這些整數的總和
-
 We return `0 - 15 = -15` as the answer.
+
+在 `[1, 5]` 範圍內不能被 `1` 整除的數字是 `[]`，`num1` 是這些數字的總和
+
+在 `[1, 5]` 範圍能被 `1` 整除的整數是 `[1, 2, 3, 4, 5]`， `num2` 是這些整數的總和
 
 我們返回 `0 - 15 = -15` 作為答案
 
@@ -723,15 +739,17 @@ class Solution:
 
 ## 3110. Score of a String 字串分數
 
-You are given a string `s`.
+### 題目
 
-給定一個字串 `s`
+You are given a string `s`.
 
 The score of a string is defined as the sum of the absolute difference between the ASCII values of adjacent characters.
 
-字串的分數定義為相鄰字元的 ASCII 值之間的絕對差之和
-
 Return the score of `s`.
+
+給定一個字串 `s`
+
+字串的分數定義為相鄰字元的 ASCII 值之間的絕對差之和
 
 回傳 `s` 的分數
 
@@ -869,19 +887,21 @@ class Solution:
 
 ## 3289. The Two Sneaky Numbers of Digitville 數字小鎮裡的兩個神秘數字
 
-In the town of Digitville, there was a list of numbers called `nums` containing integers from `0` to `n - 1`.
+### 題目
 
-在數字小鎮中，有一個名為 `nums` 的數字串列，其中包含從 `0` 到 `n - 1` 的整數
+In the town of Digitville, there was a list of numbers called `nums` containing integers from `0` to `n - 1`.
 
 Each number was supposed to appear exactly once in the list, however, two mischievous numbers sneaked in an additional time, making the list longer than usual.
 
-每個數字應該只在清單中出現一次，但是兩個惡作劇的數字又偷偷出現了一次，使得清單比平常更長
-
 As the town detective, your task is to find these two sneaky numbers.
 
-身為鎮上的偵探，你的任務是找到這兩個鬼鬼祟祟的數字
-
 Return an array of size two containing the two numbers (in any order), so peace can return to Digitville.
+
+在數字小鎮中，有一個名為 `nums` 的數字串列，其中包含從 `0` 到 `n - 1` 的整數
+
+每個數字應該只在清單中出現一次，但是兩個惡作劇的數字又偷偷出現了一次，使得清單比平常更長
+
+身為鎮上的偵探，你的任務是找到這兩個鬼鬼祟祟的數字
 
 傳回一個包含兩個數字（任意順序）的大小為 `2` 的陣列，這樣數字小鎮就可以恢復和平
 
