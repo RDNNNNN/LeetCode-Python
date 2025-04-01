@@ -287,13 +287,11 @@ Initially 最初, `X = 0`.
 
 ```py
 --X: X is decremented by 1, X =  0 - 1 = -1.
---X: X 減少 1， X = 0 - 1 = -1
-
-
 X++: X is incremented by 1, X = -1 + 1 =  0.
-X++: X 增加 1，X = -1 + 1 = 0
-
 X++: X is incremented by 1, X =  0 + 1 =  1.
+
+--X: X 減少 1， X = 0 - 1 = -1
+X++: X 增加 1，X = -1 + 1 = 0
 X++: X 增加 1，X = 0 + 1 = 1
 ```
 
@@ -313,12 +311,11 @@ Initially 最初, `X = 0`.
 
 ```py
 ++X: X is incremented by 1, X = 0 + 1 = 1.
-++X：X 增加 1，X = 0 + 1 = 1
-
 ++X: X is incremented by 1, X = 1 + 1 = 2.
-++X：X 增加 1，X = 1 + 1 = 2
-
 X++: X is incremented by 1, X = 2 + 1 = 3.
+
+++X：X 增加 1，X = 0 + 1 = 1
+++X：X 增加 1，X = 1 + 1 = 2
 X++：X 增加 1，X = 2 + 1 = 3
 ```
 
@@ -338,15 +335,13 @@ Initially 最初, `X = 0`.
 
 ```py
 X++: X is incremented by 1, X = 0 + 1 = 1.
-X++：X 增加 1`，X = 0 + 1 = 1
-
 ++X: X is incremented by 1, X = 1 + 1 = 2.
-++X：X 增加 1，X = 1 + 1 = 2
-
 --X: X is decremented by 1, X = 2 - 1 = 1.
---X：X 減少 1，X = 2 - 1 = 1
-
 X--: X is decremented by 1, X = 1 - 1 = 0.
+
+X++：X 增加 1`，X = 0 + 1 = 1
+++X：X 增加 1，X = 1 + 1 = 2
+--X：X 減少 1，X = 2 - 1 = 1
 X--：X 減少 1，X = 1 - 1 = 0
 ```
 
@@ -354,11 +349,11 @@ X--：X 減少 1，X = 1 - 1 = 0
 
 ```py
 1 <= operations.length <= 100
-
-operations[i] will be either "++X", "X++", "--X", or "X--"
-
-operations[i] 將是 ++X、X++、--X 或 X--
 ```
+
+`operations[i]` will be either `"++X", "X++", "--X", or "X--"`
+
+`operations[i]` 將是 `++X、X++、--X 或 X--`
 
 ---
 
@@ -488,6 +483,8 @@ Given two integers, num and t. A number x is achievable if it can become equal t
 Increase or decrease `x` by `1`, and simultaneously increase or decrease `num` by `1`.
 
 Return the maximum possible value of `x`.
+
+### 中文
 
 給兩個整數 `num` 跟 `t`，如果數字 `x` 能在最多 `t` 次運算後為 `num`，則該數字是可實現的
 
@@ -657,6 +654,8 @@ Integers in the range `[1, 10]` that are divisible by 3 are `[3,6,9]`, num2 is t
 
 We return `37 - 18 = 19` as the answer.
 
+### 中文
+
 `[1, 10]`範圍內不能被 `3` 整除的整數是 `[1, 2, 4, 5, 7, 8, 10]`，`num1` 是這些整數的總和 `37`
 
 `[1, 10]` 範圍內可以被 `3` 整除的整數是 `[3, 6, 9]` ， `num2` 是這些整數的總和 `18`
@@ -681,6 +680,8 @@ Integers in the range [1, 5] that are divisible by 6 are [], num2 is the sum of 
 
 We return `15 - 0 = 15` as the answer.
 
+### 中文
+
 `[1, 5]` 範圍內不能被 `6` 整除的數字是 `[1, 2, 3, 4, 5]，`num1`是這些數字的總和`15`
 
 `[1, 5] 範圍內可以被 `6`整除的整數是`[]`，`num2`是這些整數的總和`0`
@@ -704,6 +705,8 @@ Integers in the range `[1, 5]` that are not divisible by `1` are `[]`, `num1` is
 Integers in the range [1, 5] that are divisible by 1 are [1,2,3,4,5], `num2` is the sum of those integers = `15`.
 
 We return `0 - 15 = -15` as the answer.
+
+### 中文
 
 在 `[1, 5]` 範圍內不能被 `1` 整除的數字是 `[]`，`num1` 是這些數字的總和
 
@@ -765,13 +768,14 @@ Output: 13
 
 ### Explanation 解釋:
 
-```py
-The ASCII values of the characters in s are: 'h' = 104, 'e' = 101, 'l' = 108, 'o' = 111.
-s 中字元的ASCII值為：'h' = 104, 'e' = 101, 'l' = 108, 'o' = 111.
+The ASCII values of the characters in s are: `'h' = 104, 'e' = 101, 'l' = 108, 'o' = 111.`
 
-So, the score of s would be |104 - 101| + |101 - 108| + |108 - 108| + |108 - 111| = 3 + 7 + 0 + 3 = 13.
-所以， s 的分數會是 |104 - 101| + |101 - 108| + |108 - 108| + |108 - 111| = 3 + 7 + 0 + 3 = 13.
-```
+`s` 中字元的 ASCII 值為：`'h' = 104, 'e' = 101, 'l' = 108, 'o' = 111.`
+
+So, the score of s would be `|104 - 101| + |101 - 108| + |108 - 108| + |108 - 111| = 3 + 7 + 0 + 3 = 13.`
+
+所以， `s` 的分數會是 `|104 - 101| + |101 - 108| + |108 - 108| + |108 - 111| = 3 + 7 + 0 + 3 = 13.`
+
 
 ### Example 2 範例:
 
@@ -783,13 +787,14 @@ Output: 50
 
 ### Explanation 解釋:
 
-```py
-The ASCII values of the characters in s are: 'z' = 122, 'a' = 97.
-s 中字元的 ASCII 值為：'z' = 122, 'a' = 97.
 
-So, the score of s would be |122 - 97| + |97 - 122| = 25 + 25 = 50.
-所以， s 的分數會是 |122 - 97| + |97 - 122| = 25 + 25 = 50.
-```
+The ASCII values of the characters in s are: `'z' = 122, 'a' = 97.`
+`s` 中字元的 ASCII 值為：`'z' = 122, 'a' = 97.`
+
+So, the score of s would be `|122 - 97| + |97 - 122| = 25 + 25 = 50.`
+
+所以， `s` 的分數會是 `|122 - 97| + |97 - 122| = 25 + 25 = 50.`
+
 
 ### Constraints 限制:
 
@@ -896,6 +901,8 @@ Each number was supposed to appear exactly once in the list, however, two mischi
 As the town detective, your task is to find these two sneaky numbers.
 
 Return an array of size two containing the two numbers (in any order), so peace can return to Digitville.
+
+### 中文
 
 在數字小鎮中，有一個名為 `nums` 的數字串列，其中包含從 `0` 到 `n - 1` 的整數
 
