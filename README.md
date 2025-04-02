@@ -385,9 +385,9 @@ Answers within `10 - 5` of the actual answer will be accepted.
 
 ### 中文
 
-您將獲得一個四捨五入到小數點後兩位攝氏度的非負浮點數，表示以攝氏度為單位的溫度
+您將獲得一個四捨五入到小數點後兩位攝氏溫度的非負浮點數，表示以攝氏溫度為單位的溫度
 
-您應該將攝氏度轉換為開氏溫度和華氏溫度，並將其作為陣列傳回 `ans = [kelvin, fahrenheit]`
+您應該將攝氏度轉換為克氏溫度和華氏溫度，並將其作為陣列傳回 `ans = [kelvin, fahrenheit]`
 
 傳回陣列 `ans`
 
@@ -413,9 +413,9 @@ Output: [309.65000,97.70000]
 
 ### Explanation 解釋: 
 
-Temperature at 36.50 Celsius converted in Kelvin is 309.65 and converted in Fahrenheit is 97.70.
+Temperature at `36.50` Celsius converted in Kelvin is `309.65` and converted in Fahrenheit is `97.70`.
 
-36.50 攝氏度的溫度換算為克爾文為 309.65，換算為華氏度為 97.70。
+`36.50` 攝氏度的溫度換算為克氏溫度為 `309.65`，換算為華氏溫度為 `97.70`
 
 ### Example 2 範例:
 
@@ -427,9 +427,9 @@ Output: [395.26000,251.79800]
 
 ### Explanation 解釋: 
 
-Temperature at 122.11 Celsius converted in Kelvin is 395.26 and converted in Fahrenheit is 251.798.
+Temperature at `122.11` Celsius converted in Kelvin is `395.26` and converted in Fahrenheit is `251.798`.
 
-122.11 攝氏度的溫度換算為克爾文為 395.26，換算為華氏溫度為 251.798。
+`122.11` 攝氏度的溫度換算為克氏溫度為 `395.26`，換算為華氏溫度為 `251.798`
 
 ### Constraints 限制:
 
@@ -448,7 +448,7 @@ class Solution:
         fahrenheit = celsius * 1.8 + 32
         return [kelvin, fahrenheit]
 
-# 設定克爾文跟華氏的溫度
+# 設定克氏跟華氏的溫度
 
 
 class Solution:
