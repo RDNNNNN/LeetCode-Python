@@ -1,8 +1,8 @@
 # 1920. Build Array from Permutation 根據排列建立陣列
 
 # Given a zero-based permutation nums (0-indexed), build an array ans of the same length where ans[i] = nums[nums[i]] for each 0 <= i < nums.length and return it.
-# 給定一個從 0 開始的排列 nums (從 0 開始索引)，建立一個相同長度的陣列 ans，每個 0 <= i < nums.length，ans[i] = nums[nums[i]] 並返回它
 # A zero-based permutation nums is an array of distinct integers from 0 to nums.length - 1 (inclusive).
+# 給定一個從 0 開始的排列 nums (從 0 開始索引)，建立一個相同長度的陣列 ans，每個 0 <= i < nums.length，ans[i] = nums[nums[i]] 並返回它
 # 從 0 開始的排列 nums 是從 0 到 nums.length - 1 的不同整數陣列
 
 # Example 1 範例:
