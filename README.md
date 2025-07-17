@@ -1,4 +1,4 @@
-## 1920. Build Array from Permutation 根據排列建立陣列 [(連結)](https://github.com/RDNNNNN/LeetCode-Python/tree/main/1920.%20Build%20Array%20from%20Permutation)
+### 1920. Build Array from Permutation 根據排列建立陣列 [(連結)](https://github.com/RDNNNNN/LeetCode-Python/tree/main/1920.%20Build%20Array%20from%20Permutation)
 
 ### 題目
 
@@ -12,7 +12,9 @@ A zero-based permutation `nums` is an array of distinct integers from `0` to `nu
 
 從 `0` 開始的排列 `nums` 是從 `0` 到 `nums.length - 1` 的不同整數陣列
 
-## 1929. Concatenation of Array 陣列連接 [(連結)](https://github.com/RDNNNNN/LeetCode-Python/tree/main/1929.%20Concatenation%20of%20Array)
+---
+
+### 1929. Concatenation of Array 陣列連接 [(連結)](https://github.com/RDNNNNN/LeetCode-Python/tree/main/1929.%20Concatenation%20of%20Array)
 
 ### 題目
 
@@ -30,7 +32,9 @@ Return the array `ans`.
 
 回傳陣列 `ans`
 
-## 2011. Final Value of Variable After Performing Operations 執行操作後的變數最終值 [(連結)](https://github.com/RDNNNNN/LeetCode-Python/tree/main/2011.%20Final%20Value%20of%20Variable%20After%20Performing%20Operations)
+---
+
+### 2011. Final Value of Variable After Performing Operations 執行操作後的變數最終值 [(連結)](https://github.com/RDNNNNN/LeetCode-Python/tree/main/2011.%20Final%20Value%20of%20Variable%20After%20Performing%20Operations)
 
 ### 題目
 
@@ -56,7 +60,9 @@ Given an array of strings `operations` containing a list of operations, return t
 
 給定一個包含操作清單的字串操作陣列，執行所有操作後傳回 `X` 的最終值
 
-## 2469. Convert the Temperature 轉換溫度 [(連結)](https://github.com/RDNNNNN/LeetCode-Python/tree/main/2469.%20Convert%20the%20Temperature)
+---
+
+### 2469. Convert the Temperature 轉換溫度 [(連結)](https://github.com/RDNNNNN/LeetCode-Python/tree/main/2469.%20Convert%20the%20Temperature)
 
 ### 題目
 
@@ -78,9 +84,9 @@ Answers within `10 - 5` of the actual answer will be accepted.
 
 與實際答案相差 `10 - 5` 以內的答案將被接受
 
-### Note that 注意:
+---
 
-## 2769. Find the Maximum Achievable Number 找到可實現的最大數字 [(連結)](https://github.com/RDNNNNN/LeetCode-Python/tree/main/2769.%20Find%20the%20Maximum%20Achievable%20Number)
+### 2769. Find the Maximum Achievable Number 找到可實現的最大數字 [(連結)](https://github.com/RDNNNNN/LeetCode-Python/tree/main/2769.%20Find%20the%20Maximum%20Achievable%20Number)
 
 ### 題目
 
@@ -98,7 +104,9 @@ Return the maximum possible value of `x`.
 
 回傳 `x` 可能的最大值
 
-## 2894. Divisible and Non-divisible Sums Difference 可整除和不可整除的金額差異 [(連結)](https://github.com/RDNNNNN/LeetCode-Python/tree/main/2894.%20Divisible%20and%20Non-divisible%20Sums%20Difference)
+---
+
+### 2894. Divisible and Non-divisible Sums Difference 可整除和不可整除的金額差異 [(連結)](https://github.com/RDNNNNN/LeetCode-Python/tree/main/2894.%20Divisible%20and%20Non-divisible%20Sums%20Difference)
 
 ### 題目
 
@@ -124,7 +132,9 @@ num2：`[1, n]`（包括兩者）範圍內所有能被 `m` 整除的整數總和
 
 傳回整數 `num1 - num2`
 
-## 3110. Score of a String 字串分數 [(連結)](https://github.com/RDNNNNN/LeetCode-Python/tree/main/3110.%20Score%20of%20a%20String)
+---
+
+### 3110. Score of a String 字串分數 [(連結)](https://github.com/RDNNNNN/LeetCode-Python/tree/main/3110.%20Score%20of%20a%20String)
 
 ### 題目
 
@@ -140,7 +150,9 @@ Return the score of `s`.
 
 回傳 `s` 的分數
 
-## 3289. The Two Sneaky Numbers of Digitville 數字小鎮裡的兩個神秘數字 [(連結)](https://github.com/RDNNNNN/LeetCode-Python/tree/main/3289.%20The%20Two%20Sneaky%20Numbers%20of%20Digitville)
+---
+
+### 3289. The Two Sneaky Numbers of Digitville 數字小鎮裡的兩個神秘數字 [(連結)](https://github.com/RDNNNNN/LeetCode-Python/tree/main/3289.%20The%20Two%20Sneaky%20Numbers%20of%20Digitville)
 
 ### 題目
 
