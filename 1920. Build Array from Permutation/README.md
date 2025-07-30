@@ -12,9 +12,7 @@ A zero-based permutation `nums` is an array of distinct integers from `0` to `nu
 
 從 `0` 開始的排列 `nums` 是從 `0` 到 `nums.length - 1` 的不同整數陣列
 
----
-
-### Example 1 範例:
+### Example 1 範例
 
 ```py
 Input: nums = [0,2,1,5,3,4]
@@ -22,9 +20,9 @@ Input: nums = [0,2,1,5,3,4]
 Output: [0,1,2,4,5,3]
 ```
 
-### Explanation 解釋:
+### Explanation 解釋
 
-The array ans is built as follows 陣列結構如下:
+The array ans is built as follows 陣列結構如下
 
 ```py
 ans = [nums[nums[0]], nums[nums[1]], nums[nums[2]], nums[nums[3]], nums[nums[4]], nums[nums[5]]]
@@ -32,7 +30,7 @@ ans = [nums[nums[0]], nums[nums[1]], nums[nums[2]], nums[nums[3]], nums[nums[4]]
     = [0,1,2,4,5,3]
 ```
 
-### Example 2 範例:
+### Example 2 範例
 
 ```py
 Input: nums = [5,0,1,2,3,4]
@@ -40,9 +38,9 @@ Input: nums = [5,0,1,2,3,4]
 Output: [4,5,0,1,2,3]
 ```
 
-### Explanation 解釋:
+### Explanation 解釋
 
-The array ans is built as follows 陣列結構如下:
+The array ans is built as follows 陣列結構如下
 
 ```py
 ans = [nums[nums[0]], nums[nums[1]], nums[nums[2]], nums[nums[3]], nums[nums[4]], nums[nums[5]]]
@@ -50,9 +48,7 @@ ans = [nums[nums[0]], nums[nums[1]], nums[nums[2]], nums[nums[3]], nums[nums[4]]
     = [4,5,0,1,2,3]
 ```
 
----
-
-### Constraints 限制:
+### Constraints 限制
 
 ```py
 1 <= nums.length <= 1000
@@ -64,13 +60,13 @@ The elements in `nums` are distinct.
 
 `nums` 中的元素是不同的
 
-### Follow-up 額外要求:
+### Follow-up 額外要求
 
 Can you solve it without using an extra space (i.e., O(1) memory)?
 
 你能在不使用額外空間（即 `O(1)` 記憶體）的情況下解決這個問題嗎？
 
-### 額外空間:
+### 額外空間
 
 需要創建一個新的列表來存放結果，而且會隨著資料大小而增長，那就表示使用了 `O(n)` 的額外空間
 
@@ -78,9 +74,7 @@ Can you solve it without using an extra space (i.e., O(1) memory)?
 
 O 為 Order 的意思
 
----
-
-### Code
+### Code 程式碼
 
 ```py
 class Solution:
