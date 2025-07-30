@@ -1,41 +1,43 @@
 ## 3110. Score of a String 字串分數
 
+### 題目
 # You are given a string s.
 # The score of a string is defined as the sum of the absolute difference between the ASCII values of adjacent characters.
 
+### 中文
 # 給定一個字串 s，字串的分數定義為相鄰字元的 ASCII 值之間的絕對差之和
 # Return the score of s.
 # 回傳 s 的分數
 
-### Example 1 範例:
+### Example 1 範例
 # Input: s = "hello"
 # Output: 13
 
-### Explanation 解釋:
+### Explanation 解釋
 # The ASCII values of the characters in s are: 'h' = 104, 'e' = 101, 'l' = 108, 'o' = 111.
 # So, the score of s would be |104 - 101| + |101 - 108| + |108 - 108| + |108 - 111| = 3 + 7 + 0 + 3 = 13.
 
 # s 中字元的ASCII值為：'h' = 104, 'e' = 101, 'l' = 108, 'o' = 111.
 # 所以， s 的分數會是 |104 - 101| + |101 - 108| + |108 - 108| + |108 - 111| = 3 + 7 + 0 + 3 = 13.
 
-### Example 2 範例:
+### Example 2 範例
 # Input: s = "zaz"
 # Output: 50
 
-### Explanation 解釋:
+### Explanation 解釋
 # The ASCII values of the characters in s are: 'z' = 122, 'a' = 97.
 # So, the score of s would be |122 - 97| + |97 - 122| = 25 + 25 = 50.
 
+### 中文
 # s 中字元的 ASCII 值為：'z' = 122, 'a' = 97.
 # 所以， s 的分數會是 |122 - 97| + |97 - 122| = 25 + 25 = 50.
 
-### Constraints 限制:
+### Constraints 限制
 # 2 <= s.length <= 100
 # s consists only of lowercase English letters.
 # s 僅由小寫字母組成
 
-
-### Code
+### Code 程式碼
 class Solution:
     def scoreOfString(self, s: str) -> int:
         total = 0
