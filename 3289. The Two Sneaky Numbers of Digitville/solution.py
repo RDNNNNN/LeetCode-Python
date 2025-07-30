@@ -12,42 +12,38 @@
 # 身為鎮上的偵探，你的任務是找到這兩個鬼鬼祟祟的數字
 # 傳回一個包含兩個數字（任意順序）的大小為 `2` 的陣列，這樣數字小鎮就可以恢復和平
 
-
-### Example 1 範例:
+### Example 1 範例
 # Input: nums = [0,1,1,0]
 # Output: [0,1]
 
-### Explanation 解釋:
+### Explanation 解釋
 # The numbers `0` and `1` each appear twice in the array.
 # 數字 `0` 和 `1` 在陣列中各出現兩次
 
-### Example 2 範例:
+### Example 2 範例
 # Input: nums = [0,3,2,1,3,2]
 # Output: [2,3]
 
-### Explanation 解釋:
+### Explanation 解釋
 # The numbers `2` and `3` each appear twice in the array.
 # 數字 `2` 和 `3` 在陣列中各出現兩次
 
-### Example 3 範例:
+### Example 3 範例
 # Input: nums = [7,1,5,4,3,4,6,0,9,5,8,2]
 # Output: [4,5]
 
-### Explanation 解釋:
+### Explanation 解釋
 # The numbers `4` and `5` each appear twice in the array.
 # 數字 `4` 和 `5` 在陣列中各出現兩次
 
-### Constraints 限制:
+### Constraints 限制
 # 2 <= n <= 100
 # nums.length == n + 2
 # 0 <= nums[i] < n
-
 # The input is generated such that `nums` contains exactly two repeated elements.
 # 輸入的產生使得 `nums` 剛好包含兩個重複元素
 
-### Code
-
-
+### Code 程式碼
 class Solution:
     def getSneakyNumbers(self, nums: List[int]) -> List[int]:
         result = []
