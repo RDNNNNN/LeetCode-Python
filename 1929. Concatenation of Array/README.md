@@ -26,9 +26,7 @@ Return the array `ans`.
 
 最後回傳 `ans` 陣列
 
----
-
-### Example 1 範例:
+### Example 1 範例
 
 ```py
 Input: nums = [1, 2, 1]
@@ -36,9 +34,9 @@ Input: nums = [1, 2, 1]
 Output: [1, 2, 1, 1, 2, 1]
 ```
 
-### Explanation 解釋:
+### Explanation 解釋
 
-The array ans is formed as follows 陣列結構如下:
+The array ans is formed as follows 陣列結構如下
 
 ```py
 ans = [nums[0], nums[1], nums[2], nums[0], nums[1], nums[2]]
@@ -46,7 +44,7 @@ ans = [nums[0], nums[1], nums[2], nums[0], nums[1], nums[2]]
 ans = [1, 2, 1, 1, 2, 1]
 ```
 
-### Example 2 範例:
+### Example 2 範例
 
 ```py
 Input: nums = [1, 3, 2, 1]
@@ -54,9 +52,9 @@ Input: nums = [1, 3, 2, 1]
 Output: [1, 3, 2, 1, 1, 3, 2, 1]
 ```
 
-### Explanation 解釋:
+### Explanation 解釋
 
-The array ans is formed as follows 陣列結構如下:
+The array ans is formed as follows 陣列結構如下
 
 ```py
 ans = [nums[0], nums[1], nums[2], nums[3], nums[0], nums[1], nums[2], nums[3]]
@@ -64,7 +62,7 @@ ans = [nums[0], nums[1], nums[2], nums[3], nums[0], nums[1], nums[2], nums[3]]
 ans = [1, 3, 2, 1, 1, 3, 2, 1]
 ```
 
-### Constraints 限制:
+### Constraints 限制
 
 ```py
 n == nums.length
@@ -73,8 +71,6 @@ n == nums.length
 
 1 <= nums[i] <= 1000
 ```
-
----
 
 ### Code
 

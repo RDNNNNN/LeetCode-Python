@@ -1,9 +1,11 @@
 ## 1929. Concatenation of Array 陣列連接
 
+### 題目
 # Given an integer array nums of length n, you want to create an array ans of length 2n where ans[i] == nums[i] and ans[i + n] == nums[i] for 0 <= i < n (0-indexed).
 # Specifically, ans is the concatenation of two nums arrays.
 # Return the array ans.
 
+### 中文
 # 給定一個長度為 n 的整數陣列，你要建立一個長度為 2n 的陣列 ans，其中 ans[i] == nums[i] 和 ans[i + n] == nums[i]，表示 0 <= i < n (從 0 開始索引)
 # 具體來說，ans 是兩個陣列的連接。
 # 回傳陣列 ans
@@ -14,31 +16,30 @@
 # ans 的前 n 的元素等於 nums 的所有元素，後 n 個元素也等於 nums
 # 最後回傳 ans 陣列
 
-### Example 1 範例:
+### Example 1 範例
 # Input: nums = [1, 2, 1]
 # Output: [1, 2, 1, 1, 2, 1]
 
-# Explanation 解釋:
+### Explanation 解釋
 # The array ans is formed as follows 陣列結構如下:
 # ans = [nums[0], nums[1], nums[2], nums[0], nums[1], nums[2]]
 # ans = [1, 2, 1, 1, 2, 1]
 
-# Example 2 範例:
+### Example 2 範例
 # Input: nums = [1, 3, 2, 1]
 # Output: [1, 3, 2, 1, 1, 3, 2, 1]
 
-### Explanation 解釋:
+### Explanation 解釋
 # The array ans is formed as follows 陣列結構如下:
 # ans = [nums[0], nums[1], nums[2], nums[3], nums[0], nums[1], nums[2], nums[3]]
 # ans = [1, 3, 2, 1, 1, 3, 2, 1]
 
-### Constraints 限制:
+### Constraints 限制
 # `n == nums.length`
 # `1 <= n <= 1000`
 # `1 <= nums[i] <= 1000`
 
-### Code
-
+### Code 程式碼
 from typing import List
 
 
