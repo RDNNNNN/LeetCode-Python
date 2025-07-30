@@ -21,9 +21,7 @@ Return the maximum possible value of `x`.
 1. 每次操作可以增加或是減少 `x` 和 `num` 各 `1`
 2. 每次操作讓 `x` 和 `num` 差異減少 `2`
 
----
-
-### Example 1 範例:
+### Example 1 範例
 
 ```py
 Input: num = 4, t = 1
@@ -31,17 +29,19 @@ Input: num = 4, t = 1
 Output: 6
 ```
 
-### Explanation 解釋:
+### Explanation 解釋
 
 Apply the following operation once to make the maximum achievable number equal to `num`:
 
 Decrease the maximum achievable number by `1`, and increase num by `1`.
 
+### 中文
+
 使用以下操作一次，使最大的可實現數字為 `num`
 
 將最大的可實現數量減少 `1`，並將數量增加 `1`
 
-### Example 2 範例:
+### Example 2 範例
 
 ```py
 Input: num = 3, t = 2
@@ -49,25 +49,25 @@ Input: num = 3, t = 2
 Output: 7
 ```
 
-### Explanation 解釋:
+### Explanation 解釋
 
 Apply the following operation twice to make the maximum achievable number equal to `num`:
 
 Decrease the maximum achievable number by `1`, and increase `num` by `1`.
 
+### 中文
+
 使用以下操作兩次，使最大的可實現數字為 `num`
 
 將最大的可實現數量減少 `1`，並將數量增加 `1`
 
-### Constraints 限制:
+### Constraints 限制
 
 ```py
 1 <= num, t <= 50
 ```
 
----
-
-### Code
+### Code 程式碼
 
 ```py
 class Solution:
