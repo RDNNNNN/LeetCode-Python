@@ -1,3 +1,23 @@
+### 1. Two Sum 兩個和 [(連結)](https://github.com/RDNNNNN/LeetCode-Python/tree/main/1.%20Two%20Sum)
+
+### 題目
+
+Given an array of integers `nums` and an integer `target`, return indices of the two numbers such that they add up to `target`.
+
+You may assume that each input would have exactly one solution, and you may not use the same element twice.
+
+You can return the answer in any order.
+
+### 中文
+
+給定一個整數數組 `nums` 和一個整數 `target`，傳回這兩個數字的索引，使得它們總和等於 `target`
+
+你可以假設每個輸入只有一個解，而且不能重複使用同一個元素
+
+你可以按任意順序返回答案
+ 
+---
+
 ### 1920. Build Array from Permutation 根據排列建立陣列 [(連結)](https://github.com/RDNNNNN/LeetCode-Python/tree/main/1920.%20Build%20Array%20from%20Permutation)
 
 ### 題目
