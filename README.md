@@ -18,7 +18,7 @@ You can return the answer in any order.
  
 ---
 
-## 20. Valid Parentheses 有效括號 [(連結)](https://github.com/RDNNNNN/LeetCode-Python/tree/main/0020.%20Valid%20Parentheses)
+### 20. Valid Parentheses 有效括號 [(連結)](https://github.com/RDNNNNN/LeetCode-Python/tree/main/0020.%20Valid%20Parentheses)
 
 ### 題目
 
