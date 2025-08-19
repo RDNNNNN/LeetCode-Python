@@ -18,6 +18,32 @@ You can return the answer in any order.
  
 ---
 
+## 20. Valid Parentheses 有效括號 [(連結)](https://github.com/RDNNNNN/LeetCode-Python/tree/main/0020.%20Valid%20Parentheses)
+
+### 題目
+
+Given a string `s` containing just the characters `'('`, `')'`, `'{'`, `'}'`, `'['` and `']'`, determine if the input string is valid.
+
+An input string is valid if:
+
+Open brackets must be closed by the same type of brackets.
+Open brackets must be closed in the correct order.
+Every close bracket has a corresponding open bracket of the same type.
+
+### 中文
+
+給定一個字串 `s`，只包含字元 `'('`、`')'`、`'{'`、`'}'`、`'['` 和 `']'`，判斷輸入字串是否有效。
+
+輸入字串有效，條件是：
+
+左括號必須由相同類型的括號閉合。
+
+左括號必須以正確的順序閉合
+
+每個右括號都有一個與之對應的相同類型的左括號
+
+---
+
 ### 1920. Build Array from Permutation 根據排列建立陣列 [(連結)](https://github.com/RDNNNNN/LeetCode-Python/tree/main/1920.%20Build%20Array%20from%20Permutation)
 
 ### 題目
