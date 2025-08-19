@@ -39,8 +39,6 @@
 # s consists of parentheses only `'()[]{}'`.
 
 ### Code 程式碼
-
-
 class Solution:
     def isValid(self, s: str) -> bool:
         mapp = {")": "(", "]": "[", "}": "{"}
