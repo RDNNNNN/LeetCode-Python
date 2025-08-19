@@ -24,33 +24,43 @@ Every close bracket has a corresponding open bracket of the same type.
  
 ### Example 1 範例
 
+```py
 Input: s = "()"
 
 Output: true
+```
 
 ### Example 2 範例
 
+```py
 Input: s = "()[]{}"
 
 Output: true
+```
 
 ### Example 3 範例
 
+```py
 Input: s = "(]"
 
 Output: false
+```
 
 #### Example 4 範例
 
+```py
 Input: s = "([])"
 
 Output: true
+```
 
 ### Example 5 範例
 
+```py
 Input: s = "([)]"
 
 Output: false
+```
 
 ### Constraints 限制
 
