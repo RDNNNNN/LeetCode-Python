@@ -65,7 +65,10 @@ Output: false
 ### Constraints 限制
 
 `1 <= s.length <= 104`
-s consists of parentheses only `'()[]{}'`.
+
+`s` consists of parentheses only `'()[]{}'`.
+
+`s` 僅由括號「()[]{}」組成
 
 ### Code 程式碼
 
