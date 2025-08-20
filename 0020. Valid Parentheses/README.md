@@ -68,7 +68,7 @@ Output: false
 
 `s` consists of parentheses only `'()[]{}'`.
 
-`s` 僅由括號「()[]{}」組成
+`s` 僅由括號 `'()[]{}'` 組成
 
 ### Code 程式碼
 
