@@ -1,4 +1,4 @@
-### 1. Two Sum 兩個和 [(連結)](https://github.com/RDNNNNN/LeetCode-Python/tree/main/1.%20Two%20Sum)
+### 1. Two Sum 兩個和 [(連結)](https://github.com/RDNNNNN/LeetCode-Python/tree/main/0001.%20Two%20Sum)
 
 ### 題目
 
